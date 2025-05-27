@@ -17,7 +17,10 @@
   align-items: center;
   justify-content: space-between;
   padding: 0px 16px;
-  position: relative;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
   align-self: stretch;
   width: 100%;
   background-color: var(--neutral-beige);
@@ -37,13 +40,15 @@
 
 .kategoribar {
   display: flex;
+  position: fixed;
+  top: 100px;
+  z-index: 999;
   flex-direction: column;
   height: 75px;
   align-items: center;
   justify-content: center;
   gap: 12px;
   padding: 24px 120px;
-  position: relative;
   align-self: stretch;
   width: 100%;
   background-color: #527446;
@@ -127,6 +132,7 @@
 }
 
 .herosection {
+  margin-top: 170px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -364,6 +370,32 @@
   flex: 0 0 auto;
 }
 
+
+.productsection-3 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.topnav-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 35px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  background-color: var(--sort-primr);
+  border-radius: 5px;
+  border: 1px solid;
+  border-color: #1917161a;
+  box-shadow: 0px 0px 1px #19171614, 0px 2px 2px #1917160f;
+}
+
 .topnav-btn {
   display: flex;
   align-items: center;
@@ -440,6 +472,33 @@
   align-self: stretch;
   width: 100%;
   flex: 0 0 auto;
+}
+
+.productsection-2 {
+  margin-top: -1.00px;
+  font-family: var(--h2-mobile-font-family);
+  font-weight: var(--h2-mobile-font-weight);
+  color: #61210f;
+  font-size: var(--h2-mobile-font-size);
+  text-align: center;
+  letter-spacing: var(--h2-mobile-letter-spacing);
+  line-height: var(--h2-mobile-line-height);
+  position: relative;
+  align-self: stretch;
+  font-style: var(--h2-mobile-font-style);
+}
+
+.introsection-text-p {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1.00px;
+  font-family: "Jost", Helvetica;
+  font-weight: 400;
+  color: #161313;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 0.20px;
+  line-height: 32.4px;
 }
 
 .product-card {
@@ -1281,17 +1340,7 @@
 
 
 @media (min-width: 769px) {
-    .header-mobile {
-    position: fixed !important;
-    z-index: 9999;
-    left: 0;
-    top: 0;
-    width: 100%;
-    justify-content: space-around;
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-  }
+
 
   .header-logo {
     object-fit: contain;
@@ -1319,12 +1368,6 @@
     display: none;
   }
 
-  .kategoribar {
-    position: fixed !important;
-    z-index: 9999;
-    left: 0;
-    top: 100px;
-  }
 
   .herosection {
     margin-top: 175px;
