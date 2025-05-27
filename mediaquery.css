@@ -1,0 +1,9 @@
+@media (min-width: 769px)  {
+    /* Styles for tablets, desktops, etc. */
+
+    #herosection_gavebilled {
+        display: inherit;
+    }
+
+  }
+  
