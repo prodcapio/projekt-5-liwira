@@ -720,12 +720,18 @@
   font-style: var(--h2-mobile-font-style);
 }
 
+
+  .bygselvsection .div-3 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
  .bygselv-step {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  position: relative;
-  align-self: stretch;
   width: 100%;
   flex: 0 0 auto;
   background-color: #fbf5e9;
@@ -736,25 +742,27 @@
 }
 
  .bygselv-step-img {
-  position: relative;
+  position: block;
+  display: flex;
+  flex: 1;
   align-self: stretch;
-  width: 249px;
+  width: 50%;
   background: url(https://c.animaapp.com/mb6ciutdg7JhJ9/img/bygselv-step-1--img.png)
     50% 50% / cover;
   object-fit: cover;
 }
 
  .bygselv-step-text {
-  display: inline-flex;
+  width: 50%;
+  display: flex;
+  flex: 1;
   flex-direction: column;
   padding: 20px;
-  width: 100%;
   text-align: center;
   margin: auto;
   justify-content: center;
   gap: 4px;
   position: relative;
-  flex: 0 0 auto;
 }
 
  .bygselv-step-text-2 {
@@ -763,8 +771,6 @@
   font-size: var(--h4-font-size);
   letter-spacing: var(--h4-letter-spacing);
   line-height: var(--h4-line-height);
-  position: relative;
-  align-self: stretch;
   font-weight: var(--h4-font-weight);
   color: var(--sort-primr);
   font-style: var(--h4-font-style);
@@ -804,7 +810,7 @@
  .bygselv-step-img-2 {
   position: relative;
   align-self: stretch;
-  width: 231px;
+  width: 50%;
   background: url(https://c.animaapp.com/mb6ciutdg7JhJ9/img/bygselv-step-2--img.png)
     50% 50% / cover;
   object-fit: cover;
@@ -837,6 +843,7 @@
 
  .bygselv-step-3 {
   display: flex;
+  flex-direction: row;
   align-items: flex-start;
   justify-content: center;
   position: relative;
@@ -849,23 +856,26 @@
 
  .bygselv-step-img-3 {
   position: relative;
+  display: flex;
   flex: 1;
+  height: 50%;
+  width: 50%;
   flex-grow: 1;
   height: 134px;
   object-fit: cover;
 }
 
  .bygselv-step-text-6 {
+  width: 50%;
+  flex: 1;
   display: flex;
   flex-direction: column;
-  max-width: 130px;
-  align-items: flex-start;
+  align-items: stretch;
   justify-content: center;
   gap: 4px;
-  padding: 24px 16px;
-  position: relative;
-  flex: 1;
-  flex-grow: 1;
+  padding: 20px;
+  text-align: center;
+  margin: auto;
 }
 
  .bygselvsection-knap {
@@ -1436,6 +1446,10 @@
         align-self: flex-start !important;
   }
 
+  .herosection .div-3 p {
+    width: 50%;
+  }
+
 .herosection-content-2 {
   display: flex;
   flex-direction: column;
@@ -1616,7 +1630,78 @@
   cursor: pointer;
 }
 
+.aboutsection {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.aboutsection-content {
+  height: 80vh;
+  flex: 60%;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.aboutsection-content * {
+    align-items: flex-start;
+  text-align: left;
+    justify-content: flex-start;
+}
 
 
+.aboutsection_square {
+  box-sizing: border-box;
+  flex: 40%;
+  box-shadow:inset 0px 0px 0px 40px #fff;
+  height: 80vh;
+  margin-right: -1px;
+  width: 100%;
+}
+
+.collabsection-wrapper {
+  width: 100%;
+}
+
+.collabsection-2 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.collabsection-2 * {
+  text-align: left;
+}
+
+.collabsection-2 .div-4 {
+  width: 100%;
+  max-width: 100%;
+  flex: 1;
+}
+
+
+.collabsection-2 .div-2 {
+  width: 100%;
+  max-width: 100%;
+  flex: 1;
+}
+
+.collabsection-2 .div-3 {
+  width: 100%;
+  max-width: 100%;
+}
+
+
+
+.collabsection-active-wrapper {
+  width: auto;
+  align-self: auto;
+}
+
+.collabsection-6 {
+  width: auto;
+  align-self: auto;
+}
 
 }
