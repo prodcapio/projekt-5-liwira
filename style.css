@@ -1360,9 +1360,19 @@
         margin-top: 175px;
   }
 
-  .header-desktop {
-    display: inline;
+  .header-logo {
+    object-fit: contain;
+    object-position: left;
     flex: 25%;
+    text-align: left;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .header-desktop {
+    display: flex;
+    flex: 25%;
+    justify-content: space-between;
   }
   
   .header-burgermenu {
@@ -1401,8 +1411,14 @@
     flex-wrap: nowrap;
   }
 
-  .herosection * {
-    text-align: left;
+  .herosection {
+    text-align: left !important;
+  }
+
+
+  .herosection .div-2 .div-3 * {
+    text-align: left !important;
+        align-self: flex-start !important;
   }
 
 .herosection-content-2 {
