@@ -11,10 +11,15 @@
   </head>
   <body>
     <div class="frontpage-i-phone">
-      <div class="header-mobile">
+
+      <!--header -->
+
+      <header class="header-mobile">
         <img class="header-logo" src="logo/logo-black.svg"/>
         <img class="img" src="icons/black/medium/menu_m.svg"/>
-      </div>
+      </header>
+
+      <!--kategoibar(grønne)-->
       <div class="kategoribar">
         <div class="kategoribar-link">
           <div class="div">
@@ -42,6 +47,9 @@
           </div>
         </div>
       </div>
+
+      <!-- hero sektion-->
+
       <div class="herosection">
         <div class="div-2">
           <div class="div-3">
@@ -72,6 +80,8 @@
           
         </div>
       </div>
+
+      <!--produkt sektion-->
       <div class="productsection">
         <div class="div-4">
           <div class="productsection-2">Vores dejlige produkter</div>
@@ -213,6 +223,9 @@
           </div>
         </div>
       </div>
+
+      <!--byg selv sektion-->
+
       <div class="bygselvsection">
         <div class="div-4">
           <div class="bygselv-text">
@@ -257,6 +270,9 @@
           </div>
         </div>
       </div>
+
+      <!--om os sektion-->
+
       <div class="aboutsection">
         <div class="aboutsection-content">
           <div class="aboutsection-content-2">
@@ -287,6 +303,8 @@
           <div class="div-wrapper-2"><div class="text-wrapper-3">Kontakt Os</div></div>
         </div>
       </div>
+
+      <!--lokalt samarbejde sektion-->
       <div class="collabsection">
         <div class="collabsection-wrapper">
           <div class="collabsection-2">
@@ -344,49 +362,55 @@
           </div>
         </div>
       </div>
+
+      <!--footer sektion-->
         <footer class="footer">
           <div class="footer-hero">
-            <img class="footer-hero-logo" src="logo/logo-black.svg"/>
-            <p class="footer-hero-title">Liwira - Gavebutik i hjertet af Langeskov</p>
+            <img class="footer-logo" src="logo/logo-black.svg" alt="Liwira logo" />
+            <p class="footer-title">Liwira - Gavebutik i hjertet af Langeskov</p>
           </div>
+
           <div class="footer-content">
-            <div class="div">
-              <div class="footer-content-2"></div>
-              <div class="div-2">
-                <div class="text-wrapper">Åbningstider</div>
-                <img class="img" src="icons/black/medium/chevron-down-m.svg"/>
+            <div class="footer-links">
+              <div class="footer-link">
+                <button class="footer-link-toggle">Åbningstider <img class="footer-icon" src="icons/black/medium/chevron-down-m.svg" alt="Dropdown icon" /></button>
+                <div class="footer-dropdown">
+                  <p>Mandag - Fredag: 11:00 - 17:00<br>Lørdag: 10:00 - 12:00<br>Søndag & helligdage: LUKKET</p>
+                </div>
               </div>
-              <div class="footer-content-2"></div>
-            </div>
-            <div class="div">
-              <div class="footer-content-2"></div>
-              <div class="div-2">
-                <div class="text-wrapper">Læs mere</div>
-                <img class="img" src="icons/black/medium/chevron-down-m.svg"/>
+              <div class="footer-link">
+                <button class="footer-link-toggle">Læs mere <img class="footer-icon" src="icons/black/medium/chevron-down-m.svg" alt="Dropdown icon" /></button>
+                <div class="footer-dropdown">
+                  <p>Hjem <br>Om os<br>Værdier</p>
+                </div>
               </div>
-              <div class="footer-content-2"></div>
-            </div>
-            <div class="div">
-              <div class="footer-content-2"></div>
-              <div class="div-2">
-                <div class="text-wrapper">Retningslinjer</div>
-                <img class="img" src="icons/black/medium/chevron-down-m.svg"/>
+              <div class="footer-link">
+                <button class="footer-link-toggle">Retningslinjer <img class="footer-icon" src="icons/black/medium/chevron-down-m.svg" alt="Dropdown icon" /></button>
+                <div class="footer-dropdown">
+                  <p>Information<br>Privatlivspolitik<br>Handelsbetingelser</p>
+                </div>
               </div>
-              <div class="footer-content-2"></div>
             </div>
-            <div class="footer-content-3">
-              <div class="footer-content-4">Kontakt</div>
-              <p class="p">
-                Jernbanegade 16,<br />5550 Langeskov<br />kontakt@dinpejs.dk<br />+45 2426 7971<br />CVR: 34116083
+
+            <div class="footer-contact">
+              <span class="footer-contact-title">Kontakt</span>
+              <p class="footer-contact-info">
+                Jernbanegade 16,<br />
+                5550 Langeskov<br />
+                kontakt@dinpejs.dk<br />
+                +45 2426 7971<br />
+                CVR: 34116083
               </p>
             </div>
-            <div class="footer-content-2"></div>
           </div>
-          <div class="footer-btn">
-            <div class="footer-btn-contact"><div class="footer-btn-contact-p">Kontakt</div></div>
-            <div class="footer-btn-location"><div class="footer-btn-location-2">Find vej</div></div>
+
+          <div class="footer-buttons">
+            <div class="footer-button dark"><span>Kontakt</span></div>
+            <div class="footer-button light"><span>Find vej</span></div>
           </div>
         </footer>
+
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
