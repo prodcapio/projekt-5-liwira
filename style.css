@@ -1,6 +1,10 @@
 /* Vil lige se alt */
 * {border: 1px dotted purple !important;}
 
+.header-desktop {
+  display: none;
+}
+
 .frontpage-i-phone {
   display: flex;
   flex-direction: column;
@@ -184,6 +188,10 @@
   letter-spacing: var(--body-letter-spacing);
   line-height: var(--body-line-height);
   font-style: var(--body-font-style);
+}
+
+#herosection_gavebilled {
+  display: none;
 }
 
 .frontpage-i-phone .herosection-content-2 {
@@ -1327,4 +1335,107 @@
   background-color: transparent;
   color: var(--sort-primr);
   border: 2px solid var(--sort-primr);
+}
+
+@media (min-width: 769px) {
+
+  /* Styles for tablets, desktops, etc. */
+  
+  .herosection {
+        margin-top: 175px;
+  }
+
+  .header-desktop {
+    display: inline;
+    flex: 25%;
+  }
+  
+  .header-burgermenu {
+    display: none;
+  }
+
+  .header-mobile {
+    position: fixed !important;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .kategoribar {
+    position: fixed !important;
+    z-index: 9999;
+    left: 0;
+    top: 100px;
+  }
+
+  #herosection_gavebilled {
+    display: flex;
+    width: 10%;
+    flex: 25%;
+  }
+
+  .flex-herosection-content {
+    gap: 22px;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .herosection * {
+    text-align: left;
+  }
+
+.herosection-content-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 24px;
+  align-self: flex-start;
+  max-width: 50%;
+  flex: 25%;
+  background-color: #123122;
+  border-radius: 222px;
+}
+
+  .herosection-content-2 * {
+        justify-content: flex-start;
+        text-align: left;
+        align-items: flex-start;
+        align-self: flex-start;
+    }
+
+    .frontpage-i-phone .div-3 {
+        display: flex;
+
+        flex-wrap: wrap;
+        align-items: self-start;
+        gap: 16px;
+        position: relative;
+        align-self: self-start;
+      }
+
+      .text-wrapper-2 {
+        width: 1%;
+        text-align: left;
+        filter: brightness(25%);
+      }
+
+      .frontpage-i-phone .hero {
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: relative;
+        flex: auto;
+      }
+
+      #hero_filter {
+        flex-direction: row;
+      }
+
+
+
 }
