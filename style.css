@@ -1436,11 +1436,8 @@
   align-items: flex-start;
   justify-content: center;
   padding: 24px;
-  align-self: flex-start;
   max-width: 50%;
   flex: 25%;
-  background-color: #123122;
-  border-radius: 222px;
 }
 
   .herosection-content-2 * {
@@ -1458,12 +1455,6 @@
         gap: 16px;
         position: relative;
         align-self: self-start;
-      }
-
-      .text-wrapper-2 {
-        width: 1%;
-        text-align: left;
-        filter: brightness(25%);
       }
 
        .hero {
