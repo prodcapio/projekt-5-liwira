@@ -9,11 +9,24 @@
   </head>
   <body>
     <div class="frontpage-i-phone div" data-model-id="23:330">
-      <div class="header-mobile">
-        <img class="header-logo" src="https://c.animaapp.com/Dq1SugZX/img/header--logo.svg" />
-        <img class="img" src="https://c.animaapp.com/Dq1SugZX/img/menu-m.svg" />
-      </div>
+      <header class="header-mobile">
+          <img class="header-logo" src="https://c.animaapp.com/Dq1SugZX/img/header--logo.svg" alt="Logo" />
+          <button class="burger-toggle" aria-label="Åben menu">
+            <img src="https://c.animaapp.com/Dq1SugZX/img/menu-m.svg" alt="Menu ikon" />
+          </button>
+      </header>
+
+      <nav class="mobile-menu" aria-hidden="true">
+        <ul>
+          <li><a href="#forside">Forside</a></li>
+          <li><a href="#omos">Om os</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+          <li><a href="#lokation">Lokation</a></li>
+        </ul>
+      </nav>
+
       <div class="kategoribar">
+        <button class="scroll-btn left" aria-label="Scroll left">&#8249;</button>
         <div class="kategoribar-link">
           <div class="kategoribar-link-2">
             <div class="kategoribar-link-p">Delikatesser</div>
@@ -39,6 +52,7 @@
             <div class="div-wrapper"><div class="text-wrapper">Byg Selv</div></div>
           </div>
         </div>
+        <button class="scroll-btn right" aria-label="Scroll right">&#8250;</button>
       </div>
       <div class="herosection">
         <div class="div-2">
@@ -1282,5 +1296,8 @@
         <div class="footer-content-2"></div>
       </footer>
     </div>
+
+    <script src="script.js"></script>
+
   </body>
 </html>
