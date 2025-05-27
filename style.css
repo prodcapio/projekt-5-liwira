@@ -1,3 +1,6 @@
+/* Vil lige se alt */
+* {border: 1px dotted purple !important;}
+
 .frontpage-i-phone {
   display: flex;
   flex-direction: column;
