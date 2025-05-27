@@ -1,5 +1,5 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
-@import url("https://fonts.googleapis.com/css?family=Palanquin+Dark:500,var(--h4-font-weight),var(--h3-font-weight)|Madimi+One:400|Cormorant+Garamond:var(--h1-mobile-font-weight),var(--h2-font-weight),var(--h2-mobile-font-weight),var(--h1-font-weight),italic|Jost:var(--body-font-weight),400,var(--CTA-font-weight)|Inter:var(--single-line-body-base-font-weight)|Maitree:400");
+@import url("https://fonts.googleapis.com/css?family=Madimi+One:400|Cormorant+Garamond:var(--h1-mobile-font-weight),var(--h2-mobile-font-weight),italic|Jost:var(--body-font-weight),400,var(--CTA-font-weight)|Palanquin+Dark:var(--h4-font-weight),var(--h3-font-weight)|Inter:var(--single-line-body-base-font-weight)");
 * {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
@@ -16,8 +16,4 @@ button:focus-visible {
 }
 a {
   text-decoration: none;
-}
-
-.hide-on-scroll {
-  transform: translateY(-100%);
 }
