@@ -5,6 +5,10 @@
   display: none;
 }
 
+.header-desktopicons {
+  display: none;
+}
+
 .frontpage-i-phone {
   display: flex;
   flex-direction: column;
@@ -1356,8 +1360,18 @@
 
   /* Styles for tablets, desktops, etc. */
   
-  .herosection {
-        margin-top: 175px;
+
+
+    .header-mobile {
+    position: fixed !important;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
   }
 
   .header-logo {
@@ -1371,23 +1385,19 @@
 
   .header-desktop {
     display: flex;
-    flex: 25%;
+    flex: 45%;
     justify-content: space-between;
   }
+
+  .header-desktopicons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex: 10%;
+}
   
   .header-burgermenu {
     display: none;
-  }
-
-  .header-mobile {
-    position: fixed !important;
-    z-index: 9999;
-    left: 0;
-    top: 0;
-    width: 100%;
-    justify-content: space-around;
-    display: flex;
-    flex-direction: row;
   }
 
   .kategoribar {
@@ -1395,6 +1405,10 @@
     z-index: 9999;
     left: 0;
     top: 100px;
+  }
+
+    .herosection {
+        margin-top: 175px;
   }
 
   #herosection_gavebilled {
