@@ -200,6 +200,12 @@
   border-radius: 22px;
 }
 
+#herosection_gavebilled {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
 .frontpage-i-phone .text-wrapper-2 {
   position: relative;
   width: fit-content;
@@ -456,11 +462,11 @@
 }
 
 .frontpage-i-phone .product-img-2 {
-  position: relative;
-  flex: 1;
-  flex-grow: 1;
-  height: 203px;
-  object-fit: cover;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 5px;
+  display: block;
 }
 
 .frontpage-i-phone .tag-toggle-group {
@@ -576,18 +582,21 @@
 }
 
 .frontpage-i-phone .product-titel {
-  display: inline-flex;
+  display: flex; /* ✅ Use flex, not inline-flex */
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   gap: 4px;
   position: relative;
+  width: 100%; /* ✅ Force it to match parent width */
+  max-width: 100%;
   flex: 0 0 auto;
 }
 
+
 .frontpage-i-phone .product-title {
   position: relative;
-  width: fit-content;
+  width: 100%; /* stretch to fill the container */
   margin-top: -1.00px;
   font-family: var(--h4-font-family);
   font-weight: var(--h4-font-weight);
@@ -595,22 +604,28 @@
   font-size: var(--h4-font-size);
   letter-spacing: var(--h4-letter-spacing);
   line-height: var(--h4-line-height);
-  white-space: nowrap;
   font-style: var(--h4-font-style);
+
+  white-space: normal;   /* ✅ allow line breaks */
+  word-break: break-word; /* ✅ break long words if needed */
 }
+
 
 .frontpage-i-phone .product-price-2 {
   font-family: var(--body-font-family);
   font-size: var(--body-font-size);
   letter-spacing: var(--body-letter-spacing);
   line-height: var(--body-line-height);
-  position: relative;
-  width: fit-content;
-  font-weight: var(--body-font-weight);
   color: var(--sort-primr);
-  white-space: nowrap;
   font-style: var(--body-font-style);
+  font-weight: var(--body-font-weight);
+
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; /* makes text stay on one line */
 }
+
 
 .frontpage-i-phone .product-price-3 {
   display: flex;
