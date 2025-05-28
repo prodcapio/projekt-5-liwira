@@ -9,11 +9,66 @@ body {
   margin: 0px;
   height: 100%;
 }
-/* a blue color as a generic focus style */
-button:focus-visible {
-  outline: 2px solid #4a90e2 !important;
-  outline: -webkit-focus-ring-color auto 5px !important;
+
+.h1 {
+  font-family: var(--h1-font-family);
+  font-weight: var(--h1-font-weight);
+  font-size: var(--h1-font-size); 
+  letter-spacing: var(--h1-letter-spacing);
+  line-height: var(--h1-line-height);
+  font-style: var(--h1-font-style);
 }
-a {
-  text-decoration: none;
+
+.h2 {
+  font-family: var(--h2-font-family);
+  font-weight: var(--h2-font-weight);
+  font-size: var(--h2-font-size);
+  letter-spacing: var(--h2-letter-spacing);
+  line-height: var(--h2-line-height);
+  font-style: var(--h2-font-style);
+}
+
+.h3 {
+  font-family: var(--h3-font-family);
+  font-weight: var(--h3-font-weight);
+  font-size: var(--h3-font-size);
+  letter-spacing: var(--h3-letter-spacing);
+  line-height: var(--h3-line-height);
+  font-style: var(--h3-font-style);
+}
+
+.h4 {
+  font-family: var(--h4-font-family);
+  font-weight: var(--h4-font-weight);
+  font-size: var(--h4-font-size);
+  letter-spacing: var(--h4-letter-spacing);
+  line-height: var(--h4-line-height);
+  font-style: var(--h4-font-style);
+}
+
+.p {
+  font-family: var(--body-font-family);
+  font-weight: var(--body-font-weight);
+  font-size: var(--body-font-size);
+  letter-spacing: var(--body-letter-spacing);
+  line-height: var(--body-line-height);
+  font-style: var(--body-font-style);
+}
+
+.cta {
+  font-family: var(--CTA-font-family);
+  font-weight: var(--CTA-font-weight);
+  font-size: var(--CTA-font-size);
+  letter-spacing: var(--CTA-letter-spacing);
+  line-height: var(--CTA-line-height);
+  font-style: var(--CTA-font-style);
+}
+
+.highlight-body {
+  font-family: var(--highlight-body-font-family);
+  font-weight: var(--highlight-body-font-weight);
+  font-size: var(--highlight-body-font-size);
+  letter-spacing: var(--highlight-body-letter-spacing);
+  line-height: var(--highlight-body-line-height);
+  font-style: var(--highlight-body-font-style);
 }

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <script src="loaddesktopstyles.js"></script>
+  
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
@@ -8,14 +8,11 @@
     <link rel="stylesheet" href="globals.css" />
     <link rel="stylesheet" href="styleguide.css" />
     <link rel="stylesheet" href="style.css" />
+    <script src="loaddesktopstyles.js"></script>
   </head>
   <body>
-    <div class="frontpage-i-phone">
 
       <!--header -->
-
-
-
       <header class="header-mobile">
        
         <img class="header-logo" src="logo/logo-black.svg"/>
@@ -25,15 +22,21 @@
 
          <div class="header-desktop">
           <a href="">Forside</a>
-          <a href="">Kontakt</a>
+          <a href="">Inspirationsunivers</a>
           <a href="">Om Os</a>
-          <a href="">FAQ</a>
+          <a href="">Produkter</a>
         </div>
 
         <div class="header-desktopicons">
-          <img src="icons/black/medium/heart-m.svg">
-          <img src="icons/black/medium/shopping-cart-m.svg">
-          <img src="icons/black/medium/profile-m.svg">
+            <button class="icon-button icon-heart-button">
+              <img src="icons/white/small/heart-s.svg" class="icon-heart">
+            </button>
+            <button class="icon-button icon-cart-button">
+              <img src="icons/black/medium/shopping-cart-m.svg" class="icon-cart-svg">
+            </button>
+            <button class="icon-button icon-profile-button">
+              <img src="icons/black/medium/profile-m.svg" class="icon-profile-svg">
+            </button>
         </div>
         
       </header>
@@ -61,9 +64,9 @@
             <div class="kategoribar-link-p">Anledninger</div>
             <img class="img" src="icons/white/medium/chevron-down-m.svg"/>
           </div>
-          <div class="frame">
-            <div class="div-wrapper"><div class="text-wrapper">Byg Selv</div></div>
-          </div>
+            <button class="frame-button">
+            <span>Byg Selv</span>
+            </button>
         </div>
       </div>
 
@@ -71,34 +74,31 @@
 
       <div class="herosection">
         <div class="div-2">
-          <div class="div-3">
-            <p class="herosection-content">Vil du samle den perfekte gave?</p>
+          <div class="div-4">
+            <h1  class="h1">Vil du samle den perfekte gave?</h1>
             <p class="p">Hos Liwira finder du et nøje udvalgt sortiment af kunsthåndværk, 
               interiør og delikatesser, der tilsammen skaber den perfekte gave. Vi tror 
               på, at en gave skal være personlig, bæredygtig og bringe glæde – både 
               til giver og modtager.</p>
+              <div class="herosection-content-2">
+                <p class="text-wrapper-2">Find den gave der passer dig:</p>
+                <div class="div-3">
+                  <div class="hero">
+                    <div class="hero-text-p">Dit budget</div>
+                    <img class="img" src="icons/black/medium/chevron-down-m.svg"/>
+                  </div>
+                  <div class="hero">
+                    <div class="hero-text-p">Anledning</div>
+                    <img class="img" src="icons/black/medium/chevron-down-m.svg"/>
+                  </div>
+                  <div class="hero-btnbox"><div class="text-wrapper-3">Søg</div></div>
+                </div>
+              </div>
           </div>
 
           <div class="flex-herosection-content">
-
-          <div class="herosection-content-2">
-            <p class="text-wrapper-2">Find den gave der passer dig:</p>
-            <div class="div-3">
-              <div class="hero">
-                <div class="hero-text-p">Dit budget</div>
-                <img class="img" src="icons/black/medium/chevron-down-m.svg"/>
-              </div>
-              <div class="hero">
-                <div class="hero-text-p">Anledning</div>
-                <img class="img" src="icons/black/medium/chevron-down-m.svg"/>
-              </div>
-              <div class="hero-btnbox"><div class="text-wrapper-3">Søg</div></div>
-            </div>
+            <img id="herosection_gavebilled" alt="vin" src="images/all-products/_MG_3262.jpg" >
           </div>
-
-          <img id="herosection_gavebilled" alt="vin" src="images/all-products/_MG_3262.jpg" >
-
-        </div>
           
         </div>
       </div>
@@ -106,12 +106,18 @@
 
       
       <!--produkt sektion-->
-      
+      <section class="div-5">
+        <h1 class="h1">Gaver med sjæl – unikke gavekurve og håndplukkede favoritter fra Fyn</h1>
+        <p class="p">Find personlige gaver og gavekurve fyldt med charme, kvalitet og kærlighed.
+        Hos Liwira samler vi det bedste fra kendte mærker og lokalt 
+        kunsthåndværk i smukke kombinationer – perfekt som værtindegave, 
+        barselsgave, fødselsdagsgave og meget mere. Vi hjælper dig gerne med at 
+        finde det helt rigtige – eller sammensætter en gavekurv, der føles lige så god, som den ser ud.</p>
+      </section>
        <div class="productsection">
-        <div class="div-4">
+        <div class="div-2">
           <div class="productsection-2">Vores dejlige produkter</div>
           <div class="introsection-text-p-wrapper">
-            <div class="introsection-text-p">Prøv forskellige kategorier</div>
           </div>
           <div class="productsection-3">
             <div class="topnav-btn"><div class="text-wrapper-3">Mest populære</div></div>
@@ -293,7 +299,7 @@
         </div>
         <div class="bygselvsection-knap">
           <div class="div-wrapper-2">
-            <p class="span-wrapper"><span class="text-wrapper-4">Byg din kurv</span></p>
+            <button class="button"><span class="cta">Byg din kurv</span></p>
           </div>
         </div>
       </div>
@@ -494,7 +500,7 @@
           </div>
         </footer>
 
-    </div>
+
     <script src="script.js"></script>
   </body>
 </html>
