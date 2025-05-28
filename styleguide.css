@@ -70,6 +70,6 @@
   --highlight-body-font-style: normal;
 
   /* ☁️ Shadows */
-  --btn-inner-shadow: 0px 2px 2px 0px rgba(25, 23, 22, 0.06);
-  --btn-drop-shadow: 0px 0px 1px 0px rgba(25, 23, 22, 0.08), 0px 2px 2px 0px rgba(25, 23, 22, 0.06);
+  --btn-inner-shadow: 0px 2px 5px 0px rgba(25, 23, 22, 0.25);
+  --btn-drop-shadow: 0px 4px 6px 0px rgba(25, 23, 22, 0.25);
 }

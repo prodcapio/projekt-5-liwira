@@ -742,6 +742,7 @@
   width: 100%;
   padding: 24px 24px;
   gap: 16px;
+  box-shadow: var(--btn-drop-shadow);
 }
 
 .product-price {
