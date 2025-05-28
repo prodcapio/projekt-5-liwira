@@ -8,13 +8,40 @@
 /* x) produktside                                                  */
 /*————————————————————————————————————————————————————————————————————————*/
 
-* {border: 1px dotted pink;}
+* {border: 1px dotted pink !important;}
 
 .product-container-all {
+  padding: 120px 24px;
+  height: auto;
+  margin-top: 200px;
+  color: black;
   display: flex;
   flex-direction: row;
   width: 100%;
 }
+
+.product-container-left {
+  display: flex;
+  flex: 30%;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.product-container-right {
+  display: flex;
+  flex: 70%;
+}
+
+.product-container-right-categories-top a {
+  text-decoration: none !important;
+  color: var(--sort-primr);
+  font-family: var(--body-font-family);
+}
+
+.product-container-right-categories-top {
+  text-decoration: none;
+}
+
 
 
 /*————————————————————————————————————————————————————————————————————————*/
