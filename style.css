@@ -332,7 +332,7 @@
   margin-top: -1.00px;
   font-family: var(--CTA-font-family);
   font-weight: var(--CTA-font-weight);
-  color: #fcfefd;
+  color: var(--hvid-neutral);
   font-size: var(--CTA-font-size);
   text-align: center;
   letter-spacing: var(--CTA-letter-spacing);
@@ -988,12 +988,18 @@
 
 .guiftguide-button {
   background-color: var(--grn-primr);
-  color: white;
-  padding: 12px 20px;
-  border-radius: 8px;
-  font-weight: 600;
-  font-family: var(--body-font-family);
+  color: var(--hvid-neutral);
+  padding: 12px 32px;
+  border-radius: 5px;
+  font-weight: var(--CTA-font-weight);
+  font-family: var(--CTA-font-family);
+  font-size: var(--CTA-font-size);
+  letter-spacing: var(--CTA-letter-spacing);
+  line-height: var(--CTA-line-height);
+  text-align: center;
+  text-decoration: none;
   cursor: pointer;
+  box-shadow: var(--btn-drop-shadow);
 }
 
 /*————————————————————————————————————————————————————————————————————————*/
@@ -1184,6 +1190,18 @@
 .text-wrapper-5 {
   color: #f7f7f7;
   text-align: center;
+}
+
+.text-wrapper-4 {
+  color: var(--sort-primr);
+  text-align: center;
+  font-family: var(--CTA-font-family);
+  font-weight: var(--CTA-font-weight);
+  font-size: var(--CTA-font-size);
+  letter-spacing: var(--CTA-letter-spacing);
+  line-height: var(--CTA-line-height);
+  font-style: var(--CTA-font-style);
+  white-space: nowrap;
 }
 
 .collabsection-text {
