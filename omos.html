@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <script src="loaddesktopstyles.js"></script>
+  
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
@@ -8,31 +8,37 @@
     <link rel="stylesheet" href="globals.css" />
     <link rel="stylesheet" href="styleguide.css" />
     <link rel="stylesheet" href="style.css" />
+    <script src="loaddesktopstyles.js"></script>
+    <script src="burgermenu.js"></script>
   </head>
   <body>
 
       <!--header -->
-
-
-
       <header class="header-mobile">
        
         <img class="header-logo" src="logo/logo-black.svg"/>
-        <div class="header-burgermenu">
-        <img class="img" src="icons/black/medium/menu_m.svg"/>
-        </div>
 
          <div class="header-desktop">
           <a href="">Forside</a>
-          <a href="">Kontakt</a>
+          <a href="">Inspirationsunivers</a>
           <a href="">Om Os</a>
-          <a href="">FAQ</a>
+          <a href="">Produkter</a>
         </div>
 
         <div class="header-desktopicons">
-          <img src="icons/black/medium/heart-m.svg">
-          <img src="icons/black/medium/shopping-cart-m.svg">
-          <img src="icons/black/medium/profile-m.svg">
+            <button class="icon-button icon-heart-button">
+              <img src="icons/white/small/heart-s.svg" class="icon-heart" onclick="toggleNav()">
+            </button>
+            <button class="icon-button icon-cart-button">
+              <img src="icons/black/medium/shopping-cart-m.svg" class="icon-cart-svg">
+            </button>
+            <button class="icon-button icon-profile-button">
+              <img src="icons/black/medium/profile-m.svg" class="icon-profile-svg">
+            </button>
+        </div>
+
+        <div class="header-burgermenu">
+        <img onclick="toggleNav()" class="img" src="icons/black/medium/menu_m.svg"/>
         </div>
         
       </header>
@@ -60,15 +66,20 @@
             <div class="kategoribar-link-p">Anledninger</div>
             <img class="img" src="icons/white/medium/chevron-down-m.svg"/>
           </div>
-          <div class="frame">
-            <div class="div-wrapper"><div class="text-wrapper">Byg Selv</div></div>
-          </div>
+            <button class="frame-button">
+            <span>Byg Selv</span>
+            </button>
         </div>
       </div>
 
+
+
+
+
       <!--om os sektion-->
 
-      <div class="aboutsection">
+      <div class="aboutsection" id="paddingfixedforsection">
+        <div class="aboutsection_square"></div>
         <div class="aboutsection-content">
           <div class="aboutsection-content-2">
             <img
@@ -79,49 +90,39 @@
               class="aboutsection-content-4"
               src="https://c.animaapp.com/mb6ciutdg7JhJ9/img/aboutsection-content--divider.svg"
             />
-            <div class="aboutsection-content-5">Om Os</div>
+            <h1>Om Os</h1>
             <div class="aboutsection-text">
-              <div class="aboutsection-text-h">Mennesker. Materialer. Med mening.</div>
-              <p class="p">
-                Liwira er en gavebutik – men også meget mere end det. Det er et 
-                sted, hvor kvalitet, æstetik og nærvær smelter sammen i håndplukkede 
-                gaveæsker, interiør og delikatesser fra Fyn og omegn. Vi brænder 
-                for at give dig muligheden for at glæde andre med noget ægte – noget, der 
-                ikke bare ser godt ud, men også føles rigtigt.
+              <h3>Gaver med sjæl – fra hjertet af Langeskov</h3>
+              <p>
+                Hos Liwira finder du ikke bare produkter – du finder stemninger, fortællinger 
+                og små stykker hverdagsmagi. Vi er en moderne gavebutik med rødder i 
+                det lokale og en passion for kvalitet, æstetik og nærvær.<br>Fra håndplukkede 
+                delikatesser og brugskunst til keramik og interiør – alt er nøje udvalgt 
+                for at skabe glæde, ro og varme. Uanset om du er på jagt efter den perfekte 
+                gavekurv, en værtindegave, noget til dig selv eller din virksomhed, så står 
+                vi klar med inspiration og hjælp.
               </p>
-              
             </div>
-            <div class="aboutsection-text">
-              <div class="aboutsection-text-h">Vores værdier</div>
-              <p class="p">
-                Omtanke<br><br>Vi vælger produkter med mening. Økologisk chokolade, dansk keramik, 
-                specialkaffe og interiør med personlighed.<br>Bæredygtighed<br><br>Vi prioriterer 
-                lokal produktion, små leverandører og miljøvenlig emballage. Mange varer er 
-                økologiske, håndlavede og produceret under gode vilkår.<br>Æstetik<br><br>Vi tror 
-                på, at det smukke og det sanselige skaber glæde. Derfor pakker 
-                vi hver gave med kærlighed og fokus på detaljen.
-              </p>
-              
-            </div>
-            <div class="aboutsection-text">
-              <div class="aboutsection-text-h">Besøg os</div>
-              <p class="p">
-                Du finder vores butik midt i Langeskov, hvor du altid er velkommen til at 
-                kigge forbi og lade dig inspirere. Vi tager os tid til dig – uanset om 
-                du kommer efter et stykke keramik, en smuk vinflaske eller en gave til én, du holder af.
-              </p>
-              
-            </div>
-
-            
           </div>
           <div class="aboutsection-2">
             <img class="img" src="icons/brown/medium/map-pin-m.svg"/>
             <div class="aboutsection-3">Jernbanegade 16, 5550</div>
           </div>
-          <div class="collabsection-text"><div class="default-2">Kontakt os</div></div>
+
+          <button class="aboutsection-button">
+            <span class="text-wrapper-3">Kontakt os</span>
+
+  
         </div>
       </div>
+      <div class="moreabout">
+            <h3>Vi har måske mere, end du tror</h3>
+            <p>Vores webshop er kun toppen af gavekurven – endnu flere skatte gemmer 
+              sig i vores fysiske butik i Langeskov. Her kan du opleve vores udvalg 
+              helt tæt på, få personlig rådgivning og finde ting, du ikke vidste, du manglede.<br>Vi elsker 
+              at udvikle vores sortiment i dialog med vores kunder. Mangler du noget særligt? 
+              Så sig til – måske har vi det allerede, og ellers vil vi gerne forsøge at finde det til dig.</p>
+        </div>
 
       <!--lokalt samarbejde sektion-->
       <div class="collabsection">
@@ -129,7 +130,7 @@
           <div class="collabsection-2">
             <div class="div-4">
               <div class="collabsection-3">
-                <div class="collabsection-4">Lokalt samarbejde</div>
+                <h1>Lokalt samarbejde</h1>
                 <p class="collabsection-5">
                   <span class="text-wrapper-5"
                     >Vi gør også meget ud af at samarbejde med lokale leverandører både i forhold til brugskunst og
@@ -143,8 +144,9 @@
                   >
                   <span class="text-wrapper-5"> og Langeskov Kræmmermarked.</span>
                 </p>
+                              <button>Læs mere</button>
               </div>
-              <div class="collabsection-text"><div class="default-2">Læs mere</div></div>
+
             </div>
             <div class="div-2">
               <div class="div-3">
@@ -170,8 +172,8 @@
                 </div>
               </div>
               <div class="div-4">
-                <div class="collabsection-about">Lena Fischer Keramik</div>
-                <p class="collabsection-about-2">
+                <h3>Lena Fischer Keramik</h3>
+                <p>
                   Lena Fischer bor på Hindsholm med sin familie, hvor hun hånddrejer unikt keramik med lavaler og
                   krystalglasur – en passion, der begyndte med et kursus i 2019 og nu er blevet til en lille forretning
                   hjemme på gården.
@@ -181,7 +183,6 @@
           </div>
         </div>
       </div>
-
 
       <!--footer sektion-->
         <footer class="footer">
@@ -230,7 +231,7 @@
           </div>
         </footer>
 
-    </div>
+
     <script src="script.js"></script>
   </body>
 </html>
