@@ -247,6 +247,7 @@
   flex: 0 0 auto;
   background-color: #fcfefd;
   border-radius: 22px;
+  box-shadow: var(--btn-drop-shadow);
 }
 
 .text-wrapper-2 {
@@ -823,7 +824,6 @@
   flex: 0 0 auto;
   background-color: var(--grn-primr);
   border-radius: 5px;
-  border: 1px solid;
   border-color: #1917161a;
   box-shadow: var(--btn-drop-shadow);
 }
@@ -1545,6 +1545,8 @@
 
   .flex-herosection-content {
     width: 50%;
+    box-shadow: var(--btn-drop-shadow);
+    border-radius: 5px;
   }
 
   /* Kategoribar */
