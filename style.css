@@ -1143,7 +1143,8 @@
 .collabsection-2 {
   display: flex;
   flex-direction: column;
-  width: 311px;
+  width: 100%;
+  padding: 48px;
   gap: 48px;
 }
 
@@ -1478,7 +1479,7 @@
     margin-top: 170px;
     flex-direction: row;
     gap: 48px;
-    padding: 48px 120px;
+    padding: 48px 40px;
   }
 
   .herosection-content {
@@ -1509,7 +1510,7 @@
 
   /* Product Section */
   .productsection {
-    padding: 48px 120px;
+    padding: 48px 40px;
   }
 
   .product-card {
@@ -1527,7 +1528,7 @@
   .aboutsection {
     flex-direction: row;
     height: auto;
-    padding: 48px 120px;
+    padding: 48px 40px;
   }
 
   .aboutsection-content {
@@ -1536,9 +1537,17 @@
   }
 
   /* Collab Section */
-  .collabsection-wrapper {
-    padding: 48px 120px;
+
+  .collabsection {
+    padding: 48px 40px;
   }
+
+  .collabsection-wrapper {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
 
   .collabsection-2 {
     flex-direction: row;
