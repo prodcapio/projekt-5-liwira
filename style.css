@@ -1169,6 +1169,19 @@
   gap: 48px;
 }
 
+
+.collabsection-2 button {
+  max-width: 200px;
+  text-align: center;
+  background-color: var(--hvid-neutral);
+  padding: 12px 32px;
+  border-radius: 5px;
+  outline: none;
+  border: 0px solid transparent;
+  font-family: var(--CTA-font-family);
+  font-size: var(--CTA-font-size);
+}
+
 .collabsection-3 {
   display: flex;
   flex-direction: column;
