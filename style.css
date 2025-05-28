@@ -8,9 +8,13 @@
 /* x) produktside                                                  */
 /*————————————————————————————————————————————————————————————————————————*/
 
+* {border: 1px dotted pink;}
 
-
-.product-container-all {}
+.product-container-all {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
 
 
 /*————————————————————————————————————————————————————————————————————————*/
