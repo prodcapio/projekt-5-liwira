@@ -1154,6 +1154,73 @@
   font-style: var(--body-letter-spacing);
 }
 
+.moreabout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 16px;
+  position: relative;
+  align-self: stretch;
+  width: auto;
+  flex: 0 0 auto;
+  background-color: var(--neutral-beige);
+  border-radius: 5px;
+  box-shadow: var(--btn-drop-shadow);
+  flex-direction: column;
+}
+
+.moreabout-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  color: var(--brun-sekundr);
+  padding: 24px 24px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  background-color: var(--hvid-neutral);
+  border: var(--neutral-beige) 1px solid;
+  flex: 0 0 auto;
+  border-radius: 5px;
+  border: var(--brun-sekundr) 1px solid; 
+}
+
+
+.moreabout-content img {
+  width: 50%;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 5px;
+  display: block;
+}
+
+.moreabout-content .map-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+.map-container {
+    margin: auto;
+    width: 50%;
+    align-items: center;  
+    justify-content: center;
+    height: auto;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: var(--btn-drop-shadow);
+  }
+
+  .map-container iframe {
+    width: 50%;
+    margin: auto;
+    height: auto;
+    border-radius: 5px;
+    border: var(--brun-sekundr) 1px solid; /* optional */
+    box-shadow: var(--btn-drop-shadow);
+  }
+
 /*————————————————————————————————————————————————————————————————————————*/
 /* 8) Collab Section                                                       */
 /*————————————————————————————————————————————————————————————————————————*/
@@ -1606,6 +1673,10 @@
     text-align: left;
   }
 
+  .moreabout {
+    padding: 24px 40px;
+  }
+
   /* Collab Section */
 
   .collabsection {
@@ -1789,6 +1860,10 @@
   align-self: stretch;
   width: 35%;
 
+}
+
+.moreabout {
+    padding: 48px 120px;
 }
 
   .collabsection-2 {
