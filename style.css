@@ -112,6 +112,12 @@
   background-color: var(--neutral-beige);
 }
 
+.header-mobile a {
+  color: var(--sort-primr);
+  text-decoration: none;
+  font-family: var(--body-font-family);
+}
+
 #paddingfixedforsection {
   margin-top: 170px; 
 }
