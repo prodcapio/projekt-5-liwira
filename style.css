@@ -29,17 +29,35 @@
 
 .product-container-right {
   display: flex;
+  flex-direction: column;
   flex: 70%;
 }
 
-.product-container-right-categories-top a {
+/* Style A Tags væk med underline*/
+.product-container-right a {
   text-decoration: none !important;
   color: var(--sort-primr);
   font-family: var(--body-font-family);
 }
 
 .product-container-right-categories-top {
-  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 50px;
+  align-items: center;
+}
+
+.product-container-right-categories-middle {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 84px;
+  width: 100%;
+  height: 50px;
+  align-items: center;
+  overflow-x: scroll;
 }
 
 
