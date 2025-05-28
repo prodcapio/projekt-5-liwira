@@ -608,12 +608,12 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
-  padding: 8px;
+  padding: 3px;
   position: relative;
   flex: 0 0 auto;
-  background-color: #2c2c2c;
-  border-radius: 8px;
-  box-shadow: 0px 0px 1px #19171614, 0px 2px 2px #1917160f;
+  background-color: var(--sort-primr);
+  border-radius: 5px;
+  box-shadow: var(--btn-drop-shadow);
 }
 
 .tag-icon {
@@ -1442,7 +1442,7 @@
 .div-5 {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   padding: 24px 40x;
   max-width: 100%;
