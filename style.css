@@ -185,6 +185,14 @@
   gap: 16px;
 }
 
+.herosection .div-4 h1 {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  text-align: left;
+}
+
 .div-2 {
   text-align: center;
   display: flex;
@@ -222,18 +230,7 @@
   line-height: var(--h1-mobile-line-height);
 }
 
-.p {
-  position: relative;
-  align-self: stretch;
-  font-family: var(--body-font-family);
-  font-weight: var(--body-font-weight);
-  color: var(--brun-sekundr);
-  font-size: var(--body-font-size);
-  text-align: left;
-  letter-spacing: var(--body-letter-spacing);
-  line-height: var(--body-line-height);
-  font-style: var(--body-font-style);
-}
+
 
 #herosection_gavebilled {
   display: none;
@@ -836,16 +833,19 @@
   display: flex;
   flex-direction: column;
   gap: 48px;
-  align-items: center;
-  text-align: center;
+  align-items: start;
+  text-align: start;
+}
+
+.bygselv-text .p {
+  
+  color: var(--brun-sekundr);
+
 }
 
 .bygselv-text-h {
-  font-family: var(--h2-mobile-font-family);
-  font-size: var(--h2-mobile-font-size);
+  text-align: start;
   color: var(--brun-sekundr);
-  font-style: var(--h2-mobile-font-style);
-  line-height: var(--h2-mobile-letter-spacing);
 }
 
 .bygselv-text-p-wrapper p {
@@ -1451,7 +1451,7 @@
 
   /* Hero Section */
   .herosection {
-    margin-top: 200px;
+    margin-top: 170px;
     flex-direction: row;
     gap: 48px;
     padding: 48px 120px;
@@ -1569,6 +1569,7 @@
   
   .herosection-content-2 .div-3 {
     flex-direction: row;
+    flex-wrap: wrap;
   }
 
   /* Header */
@@ -1607,21 +1608,21 @@
 
   /* Byg Selv Section */
   .bygselvsection {
-    padding: 64px 160px;
+    padding: 64px 120px;
   }
 
   /* About Section */
   .aboutsection {
-    padding: 64px 160px;
+    padding: 64px 120px;
   }
 
   /* Collab Section */
   .collabsection-wrapper {
-    padding: 64px 160px;
+    padding: 64px 120px;
   }
 
   /* Footer */
   .footer {
-    padding: 64px 160px;
+    padding: 64px 120px;
   }
 }

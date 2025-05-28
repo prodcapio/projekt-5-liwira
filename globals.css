@@ -53,6 +53,7 @@ p {
   letter-spacing: var(--body-letter-spacing);
   line-height: var(--body-line-height);
   font-style: var(--body-font-style);
+  text-align: left;
 }
 
 .cta {
