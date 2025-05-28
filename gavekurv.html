@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="da">
+  
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <title>Liwira - Gaver med sjæl</title>
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="mediaquery.css" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="styleguide.css" />
+    <link rel="stylesheet" href="style.css" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Marck+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Palanquin+Dark:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Marck+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Palanquin+Dark:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Marck+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Palanquin+Dark:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="preload" as="image" href="images/all-products/_MG_3262.jpg" />
+  </head>
+  <body>
+
+      <!--header -->
+      <header class="header-mobile">
+       
+        <img class="header-logo" src="logo/logo-black.svg"/>
+
+         <div class="header-desktop">
+          <a href="index.html">Forside</a>
+          <a href="">Inspirationsunivers</a>
+          <a href="omos.html">Om Os</a>
+          <a href="produktside.html">Produkter</a>
+        </div>
+
+        <div class="header-desktopicons">
+            <button class="icon-button icon-heart-button">
+              <img src="icons/white/small/heart-s.svg" class="icon-heart" onclick="toggleNav()">
+            </button>
+            <button class="icon-button icon-cart-button">
+              <img src="icons/black/medium/shopping-cart-m.svg" class="icon-cart-svg">
+            </button>
+            <button class="icon-button icon-profile-button">
+              <img src="icons/black/medium/profile-m.svg" class="icon-profile-svg">
+            </button>
+        </div>
+
+        <div class="header-burgermenu">
+        <img onclick="toggleNav()" class="img" src="icons/black/medium/menu_m.svg"/>
+        </div>
+        
+      </header>
+
+      <!--kategoibar(grønne)-->
+      <div class="kategoribar">
+        <div class="kategoribar-link">
+          <div class="div">
+            <div class="kategoribar-link-p">Delikatesser</div>
+            <img class="img" src="icons/white/medium/chevron-down-m.svg"/>
+          </div>
+          <div class="div">
+            <div class="kategoribar-link-p">Interiør</div>
+            <img class="img" src="icons/white/medium/chevron-down-m.svg"/>
+          </div>
+          <div class="div">
+            <div class="kategoribar-link-p">Livsstil &amp; Velvære</div>
+            <img class="img" src="icons/white/medium/chevron-down-m.svg"/>
+          </div>
+          <div class="div">
+            <div class="kategoribar-link-p">Gaver Til…</div>
+            <img class="img" src="icons/white/medium/chevron-down-m.svg"/>
+          </div>
+          <div class="div">
+            <div class="kategoribar-link-p">Anledninger</div>
+            <img class="img" src="icons/white/medium/chevron-down-m.svg"/>
+          </div>
+            <button class="frame-button">
+            <span>Byg Selv</span>
+            </button>
+        </div>
+      </div>
+
+
+            <!-- hero sektion-->
+
+      <div class="herosection">
+        <div class="div-2">
+          <div class="div-4">
+            <h1  class="h1">Find en færdiglavet gavekurv her</h1>
+            
+              <div class="herosection-content-2">
+                <p class="text-wrapper-2">Find den gave der passer dig:</p>
+                <div class="div-3">
+                  <div class="hero">
+                    <div class="hero-text-p">Dit budget</div>
+                    <img class="img" src="icons/black/medium/chevron-down-m.svg"/>
+                  </div>
+                  <div class="hero">
+                    <div class="hero-text-p">Anledning</div>
+                    <img class="img" src="icons/black/medium/chevron-down-m.svg"/>
+                  </div>
+                  <div class="hero-btnbox"><div class="text-wrapper-3">Søg</div></div>
+                </div>
+              </div>
+              <h2 class="p">Eller vælg mellem disse populære kategorier.</h2>
+          </div>
+        </div>
+      </div>
+
+        <!-- produkt sektion -->
+        <div class="productsection-4">
+
+            <!-- kategori card -->
+          <div class="kategori-product-box">
+            <div class="product-img">
+              <img class="product-img-2" src="images/all-products/_MG_3402.jpg">
+            </div>
+            <div class="product-titel">
+              <h3>Under 300 kr,-</3>
+            </div>
+              <div class="product-btn">
+                <p class="cta">Se flere</p> 
+              </div>
+            </div>
+          
+
+            <div class="kategori-product-box">
+                <div class="product-img">
+                <img class="product-img-2" src="images/all-products/_MG_3402.jpg">
+                </div>
+                <div class="product-titel">
+                <h3>Til ham</3>
+                </div>
+                <div class="product-btn">
+                    <p class="cta">Se flere</p> 
+                </div>
+                </div>
+            </div>
+
+            <div class="kategori-product-box">
+                <div class="product-img">
+                <img class="product-img-2" src="images/all-products/_MG_3402.jpg">
+                </div>
+                <div class="product-titel">
+                <h3>Til hende</3>
+                </div>
+                <div class="product-btn">
+                    <p class="cta">Se flere</p> 
+                </div>
+                </div>
+            </div>
+
+            <div class="kategori-product-box">
+                <div class="product-img">
+                <img class="product-img-2" src="images/all-products/_MG_3402.jpg">
+                </div>
+                <div class="product-titel">
+                <h3>Selvforkælelse</3>
+                </div>
+                <div class="product-btn">
+                    <p class="cta">Se flere</p> 
+                </div>
+                </div>
+            </div>
+
+            <div class="kategori-product-box">
+                <div class="product-img">
+                <img class="product-img-2" src="images/all-products/_MG_3402.jpg">
+                </div>
+                <div class="product-titel">
+                <h3>Fødselsdag</3>
+                </div>
+                <div class="product-btn">
+                    <p class="cta">Se flere</p> 
+                </div>
+                </div>
+            </div>
+
+            <div class="kategori-product-box">
+                <div class="product-img">
+                <img class="product-img-2" src="images/all-products/_MG_3402.jpg">
+                </div>
+                <div class="product-titel">
+                <h3>Over 300 kr,-</3>
+                </div>
+                <div class="product-btn">
+                    <p class="cta">Se flere</p> 
+                </div>
+                </div>
+            </div>
+
+            <div class="kategori-product-box">
+                <div class="product-img">
+                <img class="product-img-2" src="images/all-products/_MG_3402.jpg">
+                </div>
+                <div class="product-titel">
+                <h3>Gin pakken</3>
+                </div>
+                <div class="product-btn">
+                    <p class="cta">Se flere</p> 
+                </div>
+                </div>
+            </div>
+
+            <div class="kategori-product-box">
+                <div class="product-img">
+                <img class="product-img-2" src="images/all-products/_MG_3402.jpg">
+                </div>
+                <div class="product-titel">
+                <h3>Interiør</3>
+                </div>
+                <div class="product-btn">
+                    <p class="cta">Se flere</p> 
+                </div>
+                </div>
+            </div>
+
+          
+    
+        </div>
+      
+
+
+
+      <!--footer sektion-->
+        <footer class="footer">
+          <div class="footer-hero">
+            <img class="footer-logo" src="logo/logo-black.svg" alt="Liwira logo" />
+            <p class="footer-title">Liwira - Gavebutik i hjertet af Langeskov</p>
+          </div>
+
+          <div class="footer-content">
+            <div class="footer-links">
+              <div class="footer-link">
+                <button class="footer-link-toggle">Åbningstider <img class="footer-icon" src="icons/black/medium/chevron-down-m.svg" alt="Dropdown icon" /></button>
+                <div class="footer-dropdown">
+                  <p>Mandag - Fredag: 11:00 - 17:00<br>Lørdag: 10:00 - 12:00<br>Søndag & helligdage: LUKKET</p>
+                </div>
+              </div>
+              <div class="footer-link">
+                <button class="footer-link-toggle">Læs mere <img class="footer-icon" src="icons/black/medium/chevron-down-m.svg" alt="Dropdown icon" /></button>
+                <div class="footer-dropdown">
+                  <p>Hjem <br>Om os<br>Værdier</p>
+                </div>
+              </div>
+              <div class="footer-link">
+                <button class="footer-link-toggle">Retningslinjer <img class="footer-icon" src="icons/black/medium/chevron-down-m.svg" alt="Dropdown icon" /></button>
+                <div class="footer-dropdown">
+                  <p>Information<br>Privatlivspolitik<br>Handelsbetingelser</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="footer-contact">
+              <span class="footer-contact-title">Kontakt</span>
+              <p class="footer-contact-info">
+                Jernbanegade 16,<br />
+                5550 Langeskov<br />
+                kontakt@dinpejs.dk<br />
+                +45 2426 7971<br />
+                CVR: 34116083
+              </p>
+            </div>
+          </div> 
+
+          <div class="footer-buttons">
+            <div class="footer-button dark"><span>Kontakt</span></div>
+            <div class="footer-button light"><span>Find vej</span></div>
+          </div>
+        </footer>
+
+    <script src="loaddesktopstyles.js" defer></script>
+    <script src="script.js" defer></script>
+    <script src="burgermenu.js" defer></script>
+  </body>
+</html>

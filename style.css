@@ -838,13 +838,24 @@
   flex: 1;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 700px;
   height: 100%;
   width: 100%;
-  min-width: 300px;
   padding: 24px 24px;
   gap: 16px;
   box-shadow: var(--btn-drop-shadow);
+}
+
+.kategori-product-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: auto;
+  padding: 12px 24px;
+  gap: 12px;
+  box-shadow: var(--btn-drop-shadow);
+  background: var(--hvid-neutral);
+  border-radius: 5px;
 }
 
 .product-price {
