@@ -1106,7 +1106,7 @@
 }
 
 .aboutsection {
-  background-image: url(images/aboutsection.png);
+  background-image: url(images/aboutsection.webp);
   color: var(--brun-sekundr);
   text-align: center;
   display: flex;
