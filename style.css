@@ -12,6 +12,10 @@
 /*————————————————————————————————————————————————————————————————————————*/
 .header-mobile {
     display: flex;
+    height: 100px;
+    gap: 24px;
+    flex-direction: row;
+    flex-wrap: nowrap;
     height: auto;
     align-items: center;
     justify-content: space-between;
@@ -25,10 +29,13 @@
 }
 
 .header-logo {
-  position: relative;
-  width: 100%;
-  max-width: 160px;
-  height: auto;
+  display: flex;
+  flex-direction: row;
+  object-fit: contain;
+  object-position: left;
+  max-height: 30px;
+  max-width: 30%;
+  flex: 20%;
 }
 
 .img {
@@ -172,11 +179,18 @@
   background-color: #fbf5e9;
 }
 
-.div-2 {
+.herosection .div-4 {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 48px;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.div-2 {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 24px;
   position: relative;
   align-self: stretch;
   width: 100%;
@@ -331,6 +345,15 @@
 /*————————————————————————————————————————————————————————————————————————*/
 /* 5) Product Section                                                     */
 /*————————————————————————————————————————————————————————————————————————*/
+
+  .produktintro {
+    padding: 48px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+
 .productsection {
   display: flex;
   flex-direction: column;
@@ -339,6 +362,10 @@
   padding: 48px 16px;
   width: 100%;
   background-color: #fcfefd;
+}
+
+.productsection h2 {
+  color: var(--brun-sekundr);
 }
 
 .product-intro {
@@ -409,9 +436,10 @@
 }
 
 .productsection-3 {
+  margin: auto;
+  width: 204px;
   display: inline-flex;
   flex-direction: column;
-  align-items: center;
   gap: 12px;
   position: relative;
   flex: 0 0 auto;
@@ -1378,24 +1406,27 @@
 /*————————————————————————————————————————————————————————————————————————*/
 /* 10) Media Queries                                                      */
 /*————————————————————————————————————————————————————————————————————————*/
+
+
+/* Tablet Størrelser */
 @media (min-width: 768px) {
+
+    .produktintro {
+    padding: 48px 40px;
+  }
+
+
   /* Header */
   .header-desktop {
     display: flex;
+    flex: 25%;
     align-items: center;
     justify-content: space-between;
     padding: 24px 120px;
     background-color: var(--neutral-beige);
-    position: fixed;
-    top: 0;
-    width: 100%;
     z-index: 1000;
   }
-  .header-desktopicons {
-    display: flex; /* Show desktop icons */
-    align-items: center;
-    gap: 16px;
-  }
+
   .header-links {
     display: flex; /* Show links */
     align-items: center;
@@ -1404,6 +1435,7 @@
   .header-burgermenu {
     display: none; /* Hide burger menu */
   }
+
 
   /* Hero Section */
   .herosection {
@@ -1419,9 +1451,14 @@
   #herosection_gavebilled {
     display: block;
     flex: 1;
-    max-width: 50%;
+    width: 100%;
     border-radius: 10px;
     object-fit: cover;
+    height: 100%;
+  }
+
+  .flex-herosection-content {
+    width: 50%;
   }
 
   /* Kategoribar */
@@ -1489,13 +1526,48 @@
 }
 
 
-
+/* PC Størrelser */
 @media (min-width: 1024px) {
+
+  .div-2 {
+  flex-direction: row;
+  }
+
+
+  .productsection-3 {
+    justify-content: flex-end;
+    flex-direction: row;
+    align-self: flex-end;
+    width: auto;
+  }
+
+  .produktintro {
+    padding: 48px 120px;
+  }
+
+
+  .herosection .div-4 {
+    width: 50%;
+}
+  
+  .herosection-content-2 {
+    align-items: start;
+    text-align: left;
+  }
+  
+  .herosection-content-2 .div-3 {
+    flex-direction: row;
+  }
+
   /* Header */
   .header-desktop {
+    display: flex;
+    flex-direction: row;
+    flex: 40%;
     padding: 0px 0px;
   }
   .header-desktopicons {
+    justify-content: flex-end;
     display: flex; /* Ensure desktop icons are visible */
     align-items: center;
     gap: 16px;
