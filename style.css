@@ -8,7 +8,7 @@
 /* x) produktside                                                  */
 /*————————————————————————————————————————————————————————————————————————*/
 
-* {border: 1px dotted pink !important;}
+
 
 .product-container-all {
   overflow: hidden;
@@ -1271,9 +1271,10 @@
 
 .moreabout-content .map-container {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: center !important;
+    justify-content: center !important;
   }
+
 .map-container {
     margin: auto;
     width: 50%;
@@ -1288,6 +1289,8 @@
   .map-container iframe {
     width: 50%;
     margin: auto;
+    align-items: center;
+    justify-content: center;
     height: auto;
     border-radius: 5px;
     border: var(--brun-sekundr) 1px solid; /* optional */
