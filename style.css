@@ -11,20 +11,20 @@
 /* 2) Header                                                             */
 /*————————————————————————————————————————————————————————————————————————*/
 .header-mobile {
-    display: flex;
-    height: 100px;
-    gap: 24px;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: space-between;
-    padding: 24px 120px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    align-self: stretch;
-    background-color: var(--neutral-beige);
+  display: flex;
+  height: 100px;
+  gap: 24px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 120px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  align-self: stretch;
+  background-color: var(--neutral-beige);
 }
 
 .header-logo {
@@ -126,7 +126,8 @@
 .div {
   display: inline-flex;
   align-items: center;
-  justify-content: center; /* Center align content */
+  justify-content: center;
+  /* Center align content */
   gap: 10px;
   position: relative;
   flex: 0 0 auto;
@@ -150,8 +151,10 @@
 .guiftguide-button {
   display: flex;
   flex-direction: row;
-  align-items: center; /* Center align button content */
-  justify-content: center; /* Center align button content */
+  align-items: center;
+  /* Center align button content */
+  justify-content: center;
+  /* Center align button content */
   background-color: var(--grn-primr);
   color: white;
   padding: 12px 20px;
@@ -342,12 +345,12 @@
 /* 5) Product Section                                                     */
 /*————————————————————————————————————————————————————————————————————————*/
 
-  .produktintro {
-    padding: 48px 16px;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-  }
+.produktintro {
+  padding: 48px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
 
 
 .productsection {
@@ -575,7 +578,7 @@
   display: block;
 }
 
-.product-price-2 .div-5{
+.product-price-2 .div-5 {
   margin-bottom: 8px;
 }
 
@@ -831,88 +834,78 @@
 /*————————————————————————————————————————————————————————————————————————*/
 /* 6) Byg Selv Section                                                     */
 /*————————————————————————————————————————————————————————————————————————*/
-.bygselvsection {
+.bygselv {
+  background-color: var(--neutral-beige);
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 48px;
-  padding: 48px 120px;
-  background-color: var(--neutral-beige);
+  padding: 48px 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
 }
 
 .bygselv-text {
+  height: 100%;
   display: flex;
-  flex-direction: column;
   gap: 24px;
-  align-items: start;
-  text-align: start;
+  flex-direction: column;
+  color: var(--brun-sekundr);
 }
 
 .bygselv-text .p {
-  
-  color: var(--brun-sekundr);
-
-}
-
-.bygselv-text-h {
-  text-align: start;
   color: var(--brun-sekundr);
 }
 
-.bygselv-text-p-wrapper p {
-  font-family: var(--body-font-family);
-  color: var(--sort-primr);
-  line-height: var(--body-letter-spacing);
-  font-size: var(--body-font-size);
-}
 
 .bygselv-step {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 48px;
 }
 
 .bygselv-step-box {
   display: flex;
+  flex: 1;
   flex-direction: column;
+  height: 100%;
   border: 2px solid var(--brun-sekundr);
-  border-radius: 10px;
-  overflow: hidden;
-  background-color: white;
-}
-
-.bygselv-step-img {
-  width: 200px;
-  height: auto;
+  border-radius: 5px;
   overflow: hidden;
 }
-
 
 .bygselv-step-text {
   padding: 16px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 16px;
+  text-align: center;
+  height: 300px;
+  padding: 24px;
+}
+
+.bygselv-step-text p {
   text-align: center;
 }
 
-.bygselv-step-h {
-  font-family: var(--h3-font-family);
-  font-size: 24px;
-  font-weight: 600;
-  color: var(--sort-primr);
-}
 
-.text-wrapper {
-  font-weight: 500;
-  color: var(--brun-sekundr);
-}
+  .bygselv-step-img {
+    max-height: 350px;
+    flex: 0;
+    width: 100%;
+    overflow: hidden;
+  }
 
-.bygselv-step-p {
-  font-family: var(--body-font-family);
-  color: var(--sort-primr);
-  font-style: var(--body-letter-spacing);
-  font-weight: var(--body-letter-spacing);
-}
+  .bygselv-step-img img {
+    width: 100%;
+    max-height: 450px;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
 
 .bygselv-step-divider {
   position: relative;
@@ -1410,6 +1403,7 @@
   color: var(--sort-primr);
   border: 2px solid var(--sort-primr);
 }
+
 .div-5 {
   display: flex;
   flex-direction: column;
@@ -1419,6 +1413,7 @@
   max-width: 100%;
   gap: 24px;
 }
+
 /*————————————————————————————————————————————————————————————————————————*/
 /* 10) Media Queries                                                      */
 /*————————————————————————————————————————————————————————————————————————*/
@@ -1440,7 +1435,7 @@
     display: none;
   }
 
-    .produktintro {
+  .produktintro {
     padding: 48px 40px;
   }
 
@@ -1467,10 +1462,12 @@
   }
 
   .header-links {
-    display: flex; /* Show links */
+    display: flex;
+    /* Show links */
     align-items: center;
     gap: 24px;
   }
+
   .header-burgermenu {
     display: flex;
   }
@@ -1483,10 +1480,12 @@
     gap: 48px;
     padding: 48px 120px;
   }
+
   .herosection-content {
     flex: 1;
     text-align: left;
   }
+
   #herosection_gavebilled {
     display: block;
     flex: 1;
@@ -1512,28 +1511,16 @@
   .productsection {
     padding: 48px 120px;
   }
+
   .product-card {
     flex: 0 0 calc(33.333% - 32px);
     max-width: calc(33.333% - 32px);
   }
 
-  /* Byg Selv Section */
-  .bygselvsection {
-    padding: 48px 120px;
-  }
 
-  
-  .bygselv-step {
-    flex-direction: row;
-    gap: 24px;
-  }
-  .bygselv-step-img {
-    height: 300px;
-    flex: 1;
-  }
-  .bygselv-step-text {
-    flex: 1;
-    text-align: left;
+
+  .bygselv {
+    padding: 48px 120px;
   }
 
   /* About Section */
@@ -1542,6 +1529,7 @@
     height: auto;
     padding: 48px 120px;
   }
+
   .aboutsection-content {
     flex: 1;
     text-align: left;
@@ -1551,6 +1539,7 @@
   .collabsection-wrapper {
     padding: 48px 120px;
   }
+
   .collabsection-2 {
     flex-direction: row;
     gap: 48px;
@@ -1560,6 +1549,7 @@
   .footer {
     padding: 48px 120px;
   }
+
   .footer-content {
     flex-direction: row;
     justify-content: space-between;
@@ -1571,12 +1561,12 @@
 /* PC Størrelser */
 @media (min-width: 1024px) {
 
-    #herosection_gavebilled {
+  #herosection_gavebilled {
     display: block;
   }
 
   .div-2 {
-  flex-direction: row;
+    flex-direction: row;
   }
 
 
@@ -1594,13 +1584,13 @@
 
   .herosection .div-4 {
     width: 50%;
-}
-  
+  }
+
   .herosection-content-2 {
     align-items: start;
     text-align: left;
   }
-  
+
   .herosection-content-2 .div-3 {
     flex-direction: row;
     flex-wrap: wrap;
@@ -1613,19 +1603,25 @@
     flex: 40%;
     padding: 0px 0px;
   }
+
   .header-desktopicons {
     justify-content: flex-end;
-    display: flex; /* Ensure desktop icons are visible */
+    display: flex;
+    /* Ensure desktop icons are visible */
     align-items: center;
     gap: 16px;
   }
+
   .header-links {
-    display: flex; /* Ensure links are visible */
+    display: flex;
+    /* Ensure links are visible */
     align-items: center;
     gap: 24px;
   }
+
   .header-burgermenu {
-    display: none; /* Hide burger menu */
+    display: none;
+    /* Hide burger menu */
   }
 
   /* Kategoribar */
@@ -1634,16 +1630,38 @@
     padding: 24px 160px;
   }
 
-  
+
   /* Product Section */
   .product-card {
     flex: 0 0 calc(25% - 32px);
     max-width: calc(25% - 32px);
   }
 
-  /* Byg Selv Section */
-  .bygselvsection {
+  .bygselv-step {
+    flex-direction: row;
+  }
+
+  .bygselv {
     padding: 48px 120px;
+  }
+
+    .bygselv-step {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .bygselv-step-img {
+    height: 300px;
+    flex: 1;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .bygselv-step-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
   }
 
   .bygselvsection .div-3 {
