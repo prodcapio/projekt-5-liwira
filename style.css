@@ -868,6 +868,7 @@
 }
 
 .bygselv-step-box {
+  background-color: var(--hvid-neutral);
   display: flex;
   flex: 1;
   flex-direction: column;
@@ -999,17 +1000,19 @@
 /* 7) About Section                                                       */
 /*————————————————————————————————————————————————————————————————————————*/
 .aboutsection {
+  background-image: url(images/aboutsection.png);
+  color: var(--brun-sekundr);
+  text-align: center;
   display: flex;
   min-height: 957px;
   align-items: center;
   justify-content: center;
-  padding: 25px 16px;
+  padding: 24px 16px;
   position: relative;
   align-self: stretch;
   width: 100%;
   flex: 0 0 auto;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), linear-gradient(0deg, rgba(73, 106, 95, 0.45) 0%, rgba(73, 106, 95, 0.45) 100%), url(https://c.animaapp.com/mb6ciutdg7JhJ9/img/aboutsection.png) 50% 50% / cover;
-}
+ }
 
 .aboutsection-content {
   display: flex;
@@ -1017,27 +1020,32 @@
   align-items: center;
   justify-content: center;
   gap: 48px;
-  padding: 48px 25px;
+  padding: 48px 24px;
   position: relative;
   flex: 1;
   flex-grow: 1;
-  background-color: #fcfefd;
+  background-color: var(--hvid-neutral);
+}
+
+.aboutsection button {
+  background-color: var(--sort-primr);
+  padding: 12px 32px;
+  border-radius: 5px;
 }
 
 .aboutsection-content-2 {
+  text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   gap: 16px;
-  position: relative;
-  align-self: stretch;
   width: 100%;
   flex: 0 0 auto;
 }
 
 .aboutsection-content-3 {
-  position: relative;
+  text-align: center;
+  margin: auto;
   width: 100px;
   height: 18.78px;
 }
@@ -1683,8 +1691,38 @@
 
   /* About Section */
   .aboutsection {
+    text-align: left;
     padding: 48px 120px;
+    justify-content: flex-start;
   }
+
+  .aboutsection-content {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .aboutsection-content-2 {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.aboutsection-content-3 {
+  text-align: left;
+  margin: 0;
+  width: 100px;
+  height: 18.78px;
+}
+
+.aboutsection-2 {
+  margin: 0;
+  text-align: left;
+  justify-content: flex-start;
+}
 
   /* Collab Section */
   .collabsection-wrapper {
