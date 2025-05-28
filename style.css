@@ -1173,6 +1173,7 @@
 .collabsection-2 button {
   max-width: 200px;
   text-align: center;
+  margin: auto;
   background-color: var(--hvid-neutral);
   padding: 12px 32px;
   border-radius: 5px;
@@ -1789,6 +1790,32 @@
 }
 
 
+.collabsection-2 .div-3 {
+  display: flex;
+  flex-direction: row;}
+
+.collabsection-active-wrapper {
+  display: flex;
+  flex: 1; 
+}
+  
+.collabsection-6 {
+    display: flex;
+  flex: 1; 
+}
+
+.collabsection-2 button {
+    margin: 0;
+  max-width: 200px;
+  text-align: center;
+  background-color: var(--hvid-neutral);
+  padding: 12px 32px;
+  border-radius: 5px;
+  outline: none;
+  border: 0px solid transparent;
+  font-family: var(--CTA-font-family);
+  font-size: var(--CTA-font-size);
+}
 
 
 
