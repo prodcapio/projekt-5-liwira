@@ -11,6 +11,7 @@
 * {border: 1px dotted pink !important;}
 
 .product-container-all {
+  overflow: hidden;
   padding: 120px 24px;
   height: auto;
   margin-top: 200px;
@@ -18,11 +19,14 @@
   display: flex;
   flex-direction: row;
   width: 100%;
+  height: auto;
 }
 
 .product-container-left {
   display: flex;
   flex: 30%;
+  width: 30%;
+  height: 100%;
   flex-direction: column;
   gap: 24px;
 }
@@ -31,6 +35,9 @@
   display: flex;
   flex-direction: column;
   flex: 70%;
+  width: 70%;
+  height: 100%;
+  overflow: hidden;
 }
 
 /* Style A Tags væk med underline*/
@@ -53,11 +60,27 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  gap: 84px;
-  width: 100%;
+  gap: 100px;
   height: 50px;
   align-items: center;
   overflow-x: scroll;
+  overflow-y: hidden;
+      white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.product-container-right-sort-after {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.product-container-right-sort-after div {
+  flex: 1;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
 }
 
 
@@ -810,6 +833,7 @@
   min-height: 700px;
   height: 100%;
   width: 100%;
+  min-width: 300px;
   padding: 24px 24px;
   gap: 16px;
   box-shadow: var(--btn-drop-shadow);
