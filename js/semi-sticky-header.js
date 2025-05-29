@@ -1,5 +1,5 @@
 let Scroll = 0;
-const threshold = 10;
+const threshold = 15;
 
 window.addEventListener('scroll', function () {
     const header = document.getElementById('semi-sticky-header')
