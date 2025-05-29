@@ -723,7 +723,6 @@
 }
 
 .productsection-4 {
-  text-align: center !important;
   justify-content: space-between;
   background-color: var(--hvid-neutral);
   display: flex;
@@ -2069,9 +2068,6 @@
     gap: 24px;
   }
 
-  .productsection-4 {
-      padding: 48px 120px;
-  }
 
   /* About Section */
   .aboutsection {
