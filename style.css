@@ -1168,7 +1168,7 @@
 
 .aboutsection_square {
   display: none;
-  box-shadow: inset 0 0 0 50px var(--hvid-neutral);
+  box-shadow: var(--btn-drop-shadow);
   margin-right: -1px;
 }
 
@@ -1199,6 +1199,7 @@
   flex: 1;
   flex-grow: 1;
   background-color: var(--hvid-neutral);
+  box-shadow: var(--btn-inner-shadow);
 }
 
 .aboutsection button {
@@ -1305,7 +1306,7 @@
   align-self: stretch;
   width: auto;
   flex: 0 0 auto;
-  background-color: var(--neutral-beige);
+  background-color: var(--neutral-white);
   border-radius: 5px;
   box-shadow: var(--btn-drop-shadow);
   flex-direction: column;
@@ -1325,7 +1326,6 @@
   border: var(--neutral-beige) 1px solid;
   flex: 0 0 auto;
   border-radius: 5px;
-  border: var(--brun-sekundr) 1px solid; 
 }
 
 
