@@ -1944,6 +1944,10 @@
     margin: 0;
   }
 
+  .productsection-4 {
+    padding-bottom: 48px;
+  }
+
   .produktintro {
     padding: 48px 120px;
   }
@@ -2166,7 +2170,7 @@
 
   /* Collab Section */
   .collabsection-wrapper {
-    padding: 48px 120px;
+    padding: 48px;
   }
 
   /* Footer */
