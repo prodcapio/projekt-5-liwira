@@ -11,11 +11,9 @@ window.addEventListener('scroll', function () {
     if (scrollForskel > threshold) {
         header.style.transform = 'translateY(-175px)';
         burgericon.style.transform = 'translateY(-175px)';
-        productbottomcontainer.style.transform = 'translateY(0px)';
     } else if (scrollForskel < -threshold) {
         header.style.transform = 'translateY(0px)';
         burgericon.style.transform = 'translateY(0px)';
-        productbottomcontainer.style.transform = 'translateY(200px)';
     }
 
     Scroll = currentScroll
