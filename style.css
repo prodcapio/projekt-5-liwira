@@ -14,7 +14,7 @@
   overflow: hidden;
   padding: 120px 24px;
   height: auto;
-  margin-top: 200px;
+  padding-top: 170px;
   color: black;
   display: flex;
   flex-direction: row;
@@ -1840,7 +1840,7 @@
 
   /* Hero Section */
   .herosection {
-    margin-top: 170px;
+    padding-top: 170px;
     flex-direction: row;
     gap: 48px;
     padding: 48px 40px;
