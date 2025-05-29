@@ -1,292 +1,298 @@
 <!DOCTYPE html>
 <html lang="da">
-  
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta charset="utf-8" />
-    <title>Om os - Liwira</title>
-    <link rel="icon" href="favicon.ico" />
-    <link rel="stylesheet" href="mediaquery.css" />
-    <link rel="stylesheet" href="globals.css" />
-    <link rel="stylesheet" href="styleguide.css" />
-    <link rel="stylesheet" href="style.css" />
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Marck+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Palanquin+Dark:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Marck+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Palanquin+Dark:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Marck+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Palanquin+Dark:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<head>
+  <script src="js/loadingscript.js" href></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8" />
+  <title>Om os - Liwira</title>
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="mediaquery.css" />
+  <link rel="stylesheet" href="globals.css" />
+  <link rel="stylesheet" href="styleguide.css" />
+  <link rel="stylesheet" href="style.css" />
 
-    <link rel="preload" as="image" href="images/all-products/_MG_3262.jpg" />
-  </head>
-  <body>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Marck+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Palanquin+Dark:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Marck+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Palanquin+Dark:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Marck+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Palanquin+Dark:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
 
-      <!--header -->
-      <header class="header-mobile">
-       
-        <img class="header-logo" src="logo/logo-black.svg"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-         <div class="header-desktop">
-          <a href="index.html">Forside</a>
-          <a href="">Inspirationsunivers</a>
-          <a href="omos.html">Om Os</a>
-          <a href="produktside.html">Produkter</a>
+  <link rel="preload" as="image" href="images/all-products/_MG_3262.webp" />
+</head>
+
+<body>
+
+  <!--header -->
+  <div id="semi-sticky-header">
+    <header class="header-mobile">
+
+      <a href="index.html" class="header-logo">
+            <img class="header-logo" src="logo/logo-black.svg" />
+      </a>
+      <div class="header-desktop">
+        <a href="index.html">Forside</a>
+        <a href="gavekurv.html">Gavekurv</a>
+        <a href="omos.html">Om Os</a>
+        <a href="produktside.html">Produkter</a>
+      </div>
+
+      <div class="header-desktopicons">
+        <button class="icon-button icon-heart-button">
+          <img src="icons/white/small/heart-s.svg" class="icon-heart" onclick="toggleNav()">
+        </button>
+        <button class="icon-button icon-cart-button">
+          <img src="icons/black/medium/shopping-cart-m.svg" class="icon-cart-svg">
+        </button>
+        <button class="icon-button icon-profile-button">
+          <img src="icons/black/medium/profile-m.svg" class="icon-profile-svg">
+        </button>
+      </div>
+
+      <div class="header-burgermenu">
+        <img onclick="toggleNav()" class="img" src="icons/black/medium/menu_m.svg" />
+      </div>
+
+    </header>
+
+    <!--kategoibar(grønne)-->
+    <div class="kategoribar">
+      <div class="kategoribar-link">
+        <div class="div">
+          <div class="kategoribar-link-p">Delikatesser</div>
+          <img class="img" src="icons/white/medium/chevron-down-m.svg" />
         </div>
-
-        <div class="header-desktopicons">
-            <button class="icon-button icon-heart-button">
-              <img src="icons/white/small/heart-s.svg" class="icon-heart" onclick="toggleNav()">
-            </button>
-            <button class="icon-button icon-cart-button">
-              <img src="icons/black/medium/shopping-cart-m.svg" class="icon-cart-svg">
-            </button>
-            <button class="icon-button icon-profile-button">
-              <img src="icons/black/medium/profile-m.svg" class="icon-profile-svg">
-            </button>
+        <div class="div">
+          <div class="kategoribar-link-p">Interiør</div>
+          <img class="img" src="icons/white/medium/chevron-down-m.svg" />
         </div>
-
-        <div class="header-burgermenu">
-        <img onclick="toggleNav()" class="img" src="icons/black/medium/menu_m.svg"/>
+        <div class="div">
+          <div class="kategoribar-link-p">Livsstil &amp; Velvære</div>
+          <img class="img" src="icons/white/medium/chevron-down-m.svg" />
         </div>
-        
-      </header>
-
-      <!--kategoibar(grønne)-->
-      <div class="kategoribar">
-        <div class="kategoribar-link">
-          <div class="div">
-            <div class="kategoribar-link-p">Delikatesser</div>
-            <img class="img" src="icons/white/medium/chevron-down-m.svg"/>
-          </div>
-          <div class="div">
-            <div class="kategoribar-link-p">Interiør</div>
-            <img class="img" src="icons/white/medium/chevron-down-m.svg"/>
-          </div>
-          <div class="div">
-            <div class="kategoribar-link-p">Livsstil &amp; Velvære</div>
-            <img class="img" src="icons/white/medium/chevron-down-m.svg"/>
-          </div>
-          <div class="div">
-            <div class="kategoribar-link-p">Gaver Til…</div>
-            <img class="img" src="icons/white/medium/chevron-down-m.svg"/>
-          </div>
-          <div class="div">
-            <div class="kategoribar-link-p">Anledninger</div>
-            <img class="img" src="icons/white/medium/chevron-down-m.svg"/>
-          </div>
-            <button class="frame-button">
-            <span>Byg Selv</span>
-            </button>
+        <div class="div">
+          <div class="kategoribar-link-p">Gaver Til…</div>
+          <img class="img" src="icons/white/medium/chevron-down-m.svg" />
         </div>
+        <div class="div">
+          <div class="kategoribar-link-p">Anledninger</div>
+          <img class="img" src="icons/white/medium/chevron-down-m.svg" />
+        </div>
+        <button class="frame-button">
+          <span>Byg Selv</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <!--header slut -->
+
+
+
+
+
+  <!--om os sektion-->
+
+  <div class="aboutsection" id="paddingfixedforsection">
+    <div class="aboutsection_square"></div>
+    <div class="aboutsection-content">
+      <div class="aboutsection-content-2">
+        <img class="aboutsection-content-3" src="logo/logo-black.svg" />
+        <img class="aboutsection-content-4"
+          src="https://c.animaapp.com/mb6ciutdg7JhJ9/img/aboutsection-content--divider.svg" />
+        <h1>Om Os</h1>
+        <div class="aboutsection-text">
+          <h3>Gaver med sjæl – fra hjertet af Langeskov</h3>
+          <p>
+            Hos Liwira finder du ikke bare produkter – du finder stemninger, fortællinger
+            og små stykker hverdagsmagi. Vi er en moderne gavebutik med rødder i
+            det lokale og en passion for kvalitet, æstetik og nærvær.<br>Fra håndplukkede
+            delikatesser og brugskunst til keramik og interiør – alt er nøje udvalgt
+            for at skabe glæde, ro og varme. Uanset om du er på jagt efter den perfekte
+            gavekurv, en værtindegave, noget til dig selv eller din virksomhed, så står
+            vi klar med inspiration og hjælp.
+          </p>
+        </div>
+      </div>
+      <div class="aboutsection-2">
+        <img class="img" src="icons/brown/medium/map-pin-m.svg" />
+        <div class="aboutsection-3">Jernbanegade 16, 5550</div>
+      </div>
+
+      <button class="aboutsection-button">
+        <span class="text-wrapper-3">Kontakt os</span>
+
+
+    </div>
+  </div>
+  <section class="moreabout">
+    <div class="moreabout-content">
+      <h3>Vi har måske mere, end du tror</h3>
+      <p>Vores webshop er kun toppen af gavekurven – endnu flere skatte gemmer
+        sig i vores fysiske butik i Langeskov. Her kan du opleve vores udvalg
+        helt tæt på, få personlig rådgivning og finde ting, du ikke vidste, du manglede.<br>Vi elsker
+        at udvikle vores sortiment i dialog med vores kunder. Mangler du noget særligt?
+        Så sig til – måske har vi det allerede, og ellers vil vi gerne forsøge at finde det til dig.</p>
+      <img src="images/all-products/_MG_3311.webp" alt="Billede af butikken Liwira" />
+
+
+      <h3>Inspiration og gaveidéer – hver dag</h3>
+      <p>På vores sociale medier deler vi løbende gaveidéer, kurve-inspiration og nyheder fra
+        butikken.<br>Her finder du gaveforslag til både:</p>
+      <ul>
+        <li>Værtindegaver</li>
+        <li>Barselsgaver</li>
+        <li>Fødselsdage og jubilæer</li>
+        <li>Konfirmation og student</li>
+        <li>Bryllup og venindehilsner</li>
+        <li>Og selvfølgelig... dig selv</li>
+      </ul>
+      <p>Vi gør os umage for at skabe æstetiske og personlige gaver, der
+        både overrasker og glæder – og som du har lyst til at give videre.</p>
+      <img src="images/all-products/_MG_3311.webp" alt="Billede af butikken Liwira" />
+    </div>
+  </section>
+  <!--lokalt samarbejde sektion-->
+  <div class="collabsection">
+    <div class="collabsection-wrapper">
+      <div class="collabsection-2">
+        <div class="div-4">
+          <div class="collabsection-3">
+            <h1>Lokalt samarbejde</h1>
+            <p class="collabsection-5">
+              <span class="text-wrapper-5">Vi gør også meget ud af at samarbejde med lokale leverandører både i forhold
+                til brugskunst og
+                delikatesser.<br />Det betyder at vi er med til at hjælpe mindre virksomheder i gang og se dem
+                vokse. Samtidig kan vi få varer leveret hurtigt og uden store miljøomkostninger. Det er
+                bæredygtighed på flere planer.<br />Desuden støtter vi flere lokale initiativer herunder blandt
+                andet </span>
+              <a href="https://www.langeskovif.dk/" target="_blank" rel="noopener noreferrer"><span
+                  class="text-wrapper-5">Langeskov Idrætsforening</span></a>
+              <span class="text-wrapper-5"> og Langeskov Kræmmermarked.</span>
+            </p>
+            <button>Læs mere</button>
+          </div>
+
+        </div>
+        <div class="div-2">
+          <div class="div-3">
+            <div class="collabsection-active-wrapper">
+              <img class="collabsection-active"
+                src="https://c.animaapp.com/mb6ciutdg7JhJ9/img/collabsection-active.png" />
+            </div>
+            <div class="collabsection-6">
+              <img class="collabsection-7"
+                src="https://c.animaapp.com/mb6ciutdg7JhJ9/img/collabsection-content-box-secondbox-pictures-slider--img.png" />
+              <div class="collabsection-8">
+                <img class="img" src="icons/white/medium/arrow-left-m.svg" />
+                <img class="collabsection-9" src="icons/white/medium/more-dots-m.svg" />
+                <img class="img" src="icons/white/medium/arrow-right-m.svg" />
+              </div>
+            </div>
+          </div>
+          <div class="div-4">
+            <h3>Lena Fischer Keramik</h3>
+            <p>
+              Lena Fischer bor på Hindsholm med sin familie, hvor hun hånddrejer unikt keramik med lavaler og
+              krystalglasur – en passion, der begyndte med et kursus i 2019 og nu er blevet til en lille forretning
+              hjemme på gården.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="moreabout">
+    <div class="moreabout-content">
+
+      <h3>Vores allesammens butik</h3>
+      <p>På Jernbanegade 16 deler vi adresse med Pejsemontering Fyn, men Liwira er sit eget
+        univers – bygget op omkring varme, æstetik og god stemning. Vi kalder det "vores
+        allesammens butik", fordi vi lytter, tilpasser og udvikler os sammen med vores kunder.<br>Om du kommer fra
+        Langeskov, Kerteminde, Nyborg, Ullerslev, Rynkeby eller omegn – du er altid velkommen hos os.</p>
+      <div class="mapcontainer">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2267.885534179046!2d10.588910577495902!3d55.36000122217668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464d19da8ae2a177%3A0x4755fff4d180b7b0!2sPejsemontering%20Fyn%20%26%20LIWIRA!5e0!3m2!1sda!2sdk!4v1748453535772!5m2!1sda!2sdk"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
 
 
 
 
+      <h4>Vi glæder os til at pakke din næste gave – og byde dig velkommen i Liwira.</h4>
+      <p>Åbent mandag–fredag kl. 11–17, lørdag kl. 10–12<br>
+        Følg os på Facebook & Instagram for inspiration</p>
 
-      <!--om os sektion-->
+    </div>
+  </section>
 
-      <div class="aboutsection" id="paddingfixedforsection">
-        <div class="aboutsection_square"></div>
-        <div class="aboutsection-content">
-          <div class="aboutsection-content-2">
-            <img
-              class="aboutsection-content-3"
-              src="logo/logo-black.svg"
-            />
-            <img
-              class="aboutsection-content-4"
-              src="https://c.animaapp.com/mb6ciutdg7JhJ9/img/aboutsection-content--divider.svg"
-            />
-            <h1>Om Os</h1>
-            <div class="aboutsection-text">
-              <h3>Gaver med sjæl – fra hjertet af Langeskov</h3>
-              <p>
-                Hos Liwira finder du ikke bare produkter – du finder stemninger, fortællinger 
-                og små stykker hverdagsmagi. Vi er en moderne gavebutik med rødder i 
-                det lokale og en passion for kvalitet, æstetik og nærvær.<br>Fra håndplukkede 
-                delikatesser og brugskunst til keramik og interiør – alt er nøje udvalgt 
-                for at skabe glæde, ro og varme. Uanset om du er på jagt efter den perfekte 
-                gavekurv, en værtindegave, noget til dig selv eller din virksomhed, så står 
-                vi klar med inspiration og hjælp.
-              </p>
-            </div>
+  <!--footer sektion-->
+  <footer class="footer">
+    <div class="footer-hero">
+      <img class="footer-logo" src="logo/logo-black.svg" alt="Liwira logo" />
+      <p class="footer-title">Liwira - Gavebutik i hjertet af Langeskov</p>
+    </div>
+
+    <div class="footer-content">
+      <div class="footer-links">
+        <div class="footer-link">
+          <button class="footer-link-toggle">Åbningstider <img class="footer-icon"
+              src="icons/black/medium/chevron-down-m.svg" alt="Dropdown icon" /></button>
+          <div class="footer-dropdown">
+            <p>Mandag - Fredag: 11:00 - 17:00<br>Lørdag: 10:00 - 12:00<br>Søndag & helligdage: LUKKET</p>
           </div>
-          <div class="aboutsection-2">
-            <img class="img" src="icons/brown/medium/map-pin-m.svg"/>
-            <div class="aboutsection-3">Jernbanegade 16, 5550</div>
+        </div>
+        <div class="footer-link">
+          <button class="footer-link-toggle">Læs mere <img class="footer-icon"
+              src="icons/black/medium/chevron-down-m.svg" alt="Dropdown icon" /></button>
+          <div class="footer-dropdown">
+            <p>Hjem <br>Om os<br>Værdier</p>
           </div>
-
-          <button class="aboutsection-button">
-            <span class="text-wrapper-3">Kontakt os</span>
-
-  
         </div>
-      </div>
-      <section class="moreabout">
-        <div class="moreabout-content">
-            <h3>Vi har måske mere, end du tror</h3>
-            <p>Vores webshop er kun toppen af gavekurven – endnu flere skatte gemmer 
-              sig i vores fysiske butik i Langeskov. Her kan du opleve vores udvalg 
-              helt tæt på, få personlig rådgivning og finde ting, du ikke vidste, du manglede.<br>Vi elsker 
-              at udvikle vores sortiment i dialog med vores kunder. Mangler du noget særligt? 
-              Så sig til – måske har vi det allerede, og ellers vil vi gerne forsøge at finde det til dig.</p>
-            <img src="images/all-products/_MG_3311.jpg" alt="Billede af butikken Liwira" />
-
-            
-            <h3>Inspiration og gaveidéer – hver dag</h3>
-            <p>På vores sociale medier deler vi løbende gaveidéer, kurve-inspiration og nyheder fra 
-              butikken.<br>Her finder du gaveforslag til både:</p>
-              <ul>
-                <li>Værtindegaver</li>
-                <li>Barselsgaver</li>
-                <li>Fødselsdage og jubilæer</li>
-                <li>Konfirmation og student</li>
-                <li>Bryllup og venindehilsner</li>
-                <li>Og selvfølgelig... dig selv</li>
-              </ul>
-            <p>Vi gør os umage for at skabe æstetiske og personlige gaver, der 
-              både overrasker og glæder – og som du har lyst til at give videre.</p>
-            <img src="images/all-products/_MG_3311.jpg" alt="Billede af butikken Liwira" />
-        </div>
-      </section>
-      <!--lokalt samarbejde sektion-->
-      <div class="collabsection">
-        <div class="collabsection-wrapper">
-          <div class="collabsection-2">
-            <div class="div-4">
-              <div class="collabsection-3">
-                <h1>Lokalt samarbejde</h1>
-                <p class="collabsection-5">
-                  <span class="text-wrapper-5"
-                    >Vi gør også meget ud af at samarbejde med lokale leverandører både i forhold til brugskunst og
-                    delikatesser.<br />Det betyder at vi er med til at hjælpe mindre virksomheder i gang og se dem
-                    vokse. Samtidig kan vi få varer leveret hurtigt og uden store miljøomkostninger. Det er
-                    bæredygtighed på flere planer.<br />Desuden støtter vi flere lokale initiativer herunder blandt
-                    andet </span
-                  >
-                  <a href="https://www.langeskovif.dk/" target="_blank" rel="noopener noreferrer"
-                    ><span class="text-wrapper-5">Langeskov Idrætsforening</span></a
-                  >
-                  <span class="text-wrapper-5"> og Langeskov Kræmmermarked.</span>
-                </p>
-                              <button>Læs mere</button>
-              </div>
-
-            </div>
-            <div class="div-2">
-              <div class="div-3">
-                <div class="collabsection-active-wrapper">
-                  <img
-                    class="collabsection-active"
-                    src="https://c.animaapp.com/mb6ciutdg7JhJ9/img/collabsection-active.png"
-                  />
-                </div>
-                <div class="collabsection-6">
-                  <img
-                    class="collabsection-7"
-                    src="https://c.animaapp.com/mb6ciutdg7JhJ9/img/collabsection-content-box-secondbox-pictures-slider--img.png"
-                  />
-                  <div class="collabsection-8">
-                    <img class="img" src="icons/white/medium/arrow-left-m.svg"/>
-                    <img
-                      class="collabsection-9"
-                      src="icons/white/medium/more-dots-m.svg"
-                    />
-                    <img class="img" src="icons/white/medium/arrow-right-m.svg"/>
-                  </div>
-                </div>
-              </div>
-              <div class="div-4">
-                <h3>Lena Fischer Keramik</h3>
-                <p>
-                  Lena Fischer bor på Hindsholm med sin familie, hvor hun hånddrejer unikt keramik med lavaler og
-                  krystalglasur – en passion, der begyndte med et kursus i 2019 og nu er blevet til en lille forretning
-                  hjemme på gården.
-                </p>
-              </div>
-            </div>
+        <div class="footer-link">
+          <button class="footer-link-toggle">Retningslinjer <img class="footer-icon"
+              src="icons/black/medium/chevron-down-m.svg" alt="Dropdown icon" /></button>
+          <div class="footer-dropdown">
+            <p>Information<br>Privatlivspolitik<br>Handelsbetingelser</p>
           </div>
         </div>
       </div>
 
-      <section class="moreabout">
-        <div class="moreabout-content">
-  
-            <h3>Vores allesammens butik</h3>
-            <p>På Jernbanegade 16 deler vi adresse med Pejsemontering Fyn, men Liwira er sit eget 
-              univers – bygget op omkring varme, æstetik og god stemning. Vi kalder det "vores 
-              allesammens butik", fordi vi lytter, tilpasser og udvikler os sammen med vores kunder.<br>Om du kommer fra 
-              Langeskov, Kerteminde, Nyborg, Ullerslev, Rynkeby eller omegn – du er altid velkommen hos os.</p>
-            <div class="mapcontainer">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2267.885534179046!2d10.588910577495902!3d55.36000122217668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464d19da8ae2a177%3A0x4755fff4d180b7b0!2sPejsemontering%20Fyn%20%26%20LIWIRA!5e0!3m2!1sda!2sdk!4v1748453535772!5m2!1sda!2sdk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-            
-           
+      <div class="footer-contact">
+        <span class="footer-contact-title">Kontakt</span>
+        <p class="footer-contact-info">
+          Jernbanegade 16,<br />
+          5550 Langeskov<br />
+          kontakt@dinpejs.dk<br />
+          +45 2426 7971<br />
+          CVR: 34116083
+        </p>
+      </div>
+    </div>
 
-            
-            <h4>Vi glæder os til at pakke din næste gave – og byde dig velkommen i Liwira.</h4>
-            <p>Åbent mandag–fredag kl. 11–17, lørdag kl. 10–12<br>
-              Følg os på Facebook & Instagram for inspiration</p>
-              
-        </div>
-      </section>
+    <div class="footer-buttons">
+      <div class="footer-button dark"><span>Kontakt</span></div>
+      <div class="footer-button light"><span>Find vej</span></div>
+    </div>
+  </footer>
 
-      <!--footer sektion-->
-        <footer class="footer">
-          <div class="footer-hero">
-            <img class="footer-logo" src="logo/logo-black.svg" alt="Liwira logo" />
-            <p class="footer-title">Liwira - Gavebutik i hjertet af Langeskov</p>
-          </div>
+  <script src="js/script.js" defer></script>
+  <script src="js/burgermenu.js" defer></script>
+  <script src="js/semi-sticky-header.js" href></script>
+</body>
 
-          <div class="footer-content">
-            <div class="footer-links">
-              <div class="footer-link">
-                <button class="footer-link-toggle">Åbningstider <img class="footer-icon" src="icons/black/medium/chevron-down-m.svg" alt="Dropdown icon" /></button>
-                <div class="footer-dropdown">
-                  <p>Mandag - Fredag: 11:00 - 17:00<br>Lørdag: 10:00 - 12:00<br>Søndag & helligdage: LUKKET</p>
-                </div>
-              </div>
-              <div class="footer-link">
-                <button class="footer-link-toggle">Læs mere <img class="footer-icon" src="icons/black/medium/chevron-down-m.svg" alt="Dropdown icon" /></button>
-                <div class="footer-dropdown">
-                  <p>Hjem <br>Om os<br>Værdier</p>
-                </div>
-              </div>
-              <div class="footer-link">
-                <button class="footer-link-toggle">Retningslinjer <img class="footer-icon" src="icons/black/medium/chevron-down-m.svg" alt="Dropdown icon" /></button>
-                <div class="footer-dropdown">
-                  <p>Information<br>Privatlivspolitik<br>Handelsbetingelser</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="footer-contact">
-              <span class="footer-contact-title">Kontakt</span>
-              <p class="footer-contact-info">
-                Jernbanegade 16,<br />
-                5550 Langeskov<br />
-                kontakt@dinpejs.dk<br />
-                +45 2426 7971<br />
-                CVR: 34116083
-              </p>
-            </div>
-          </div> 
-
-          <div class="footer-buttons">
-            <div class="footer-button dark"><span>Kontakt</span></div>
-            <div class="footer-button light"><span>Find vej</span></div>
-          </div>
-        </footer>
-
-
-    <script src="script.js"></script>
-  </body>
 </html>
