@@ -1381,9 +1381,9 @@
   align-self: stretch;
   width: auto;
   flex: 0 0 auto;
-  background-color: var(--neutral-beige);
+  background-color: var(--hvid-neutral);
   border-radius: 5px;
-  box-shadow: var(--btn-drop-shadow);
+  
   flex-direction: column;
 }
 
@@ -1401,7 +1401,7 @@
   border: var(--neutral-beige) 1px solid;
   flex: 0 0 auto;
   border-radius: 5px;
-  border: var(--brun-sekundr) 1px solid;
+  box-shadow: var(--btn-drop-shadow);
 }
 
 
