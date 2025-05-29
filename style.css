@@ -1,8 +1,26 @@
 /*————————————————————————————————————————————————————————————————————————*/
-/* 1) Universal Reset                                                    */
+/* 1) burger                                                   */
 /*————————————————————————————————————————————————————————————————————————*/
 
+  #burger-icon {
+    transition: 1s all ease;
+    cursor: pointer;
+    z-index: 10001;
+    position: relative;
+    position: fixed;
+    top: 36px;
+    right: 48px;
+    width: 24px;
+    height: 24px;
+    z-index: 10001;
+    cursor: pointer;
+  }
 
+  #burger-icon.nav-open {
+    position: fixed;
+    top: 24px;
+    right: 24px;
+  }
 
 /*————————————————————————————————————————————————————————————————————————*/
 /* x) produktside                                                  */
@@ -262,6 +280,8 @@
 
 .header-logo {
   display: flex;
+  position: fixed;
+  left: 48px;
   flex-direction: row;
   object-fit: contain;
   object-position: left;
@@ -1417,7 +1437,7 @@
   flex: 0 0 auto;
   background-color: var(--hvid-neutral);
   border-radius: 5px;
-  
+
   flex-direction: column;
 }
 
@@ -1864,7 +1884,6 @@
     display: flex;
   }
 
-
   /* Hero Section */
   .herosection {
     margin-top: 170px;
@@ -1916,9 +1935,9 @@
   }
 
   .product-container-all-2 {
-  
-  padding: 48px 40px;
-  
+
+    padding: 48px 40px;
+
   }
 
   .bygselv {
@@ -2074,9 +2093,9 @@
   }
 
   .product-container-all-2 {
-  
+
     padding: 48px 120px;
-  
+
   }
 
   .bygselv-step {
