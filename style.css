@@ -724,7 +724,7 @@
 
 .productsection-4 {
   text-align: center !important;
-  justify-content: center;
+  justify-content: space-between;
   background-color: var(--hvid-neutral);
   display: flex;
   flex-direction: row;
