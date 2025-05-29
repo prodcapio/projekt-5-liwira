@@ -1948,9 +1948,24 @@
     padding: 48px 120px;
   }
 
+  .herosection {
+    padding: 48px 120px;
+  }
+
+  .herosection .div-2 {
+    justify-content: center;
+    align-items: center;
+  }
+
 
   .herosection .div-4 {
     width: 50%;
+    justify-content: center;
+  }
+
+  .flex-herosection-content {
+    height: 75%;
+    justify-content: center;
   }
 
   .herosection-content-2 {
@@ -1961,6 +1976,10 @@
   .herosection-content-2 .div-3 {
     flex-direction: row;
     flex-wrap: wrap;
+  }
+
+  .productsection {
+    padding: 48px 120px;
   }
 
   /* Header */
@@ -2085,6 +2104,10 @@
   }
 
   .moreabout {
+    padding: 48px 120px;
+  }
+
+  .collabsection {
     padding: 48px 120px;
   }
 

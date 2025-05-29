@@ -17,15 +17,16 @@ loadingOverlay.style.transition = "opacity 0.4s ease";
 // Create loading image
 const loadingImage = document.createElement("img");
 loadingImage.src = "images/gif/loadingif.gif";
-loadingImage.style.width = "30vw";
-loadingImage.style.maxWidth = "100%";
+loadingImage.style.width = "50vw";
+loadingImage.style.maxWidth = "300px";
 loadingImage.style.height = "auto";
 loadingImage.alt = "Loading...";
 
 // Create progress bar container
 const progressBarContainer = document.createElement("div");
-progressBarContainer.style.width = "15vw";
-progressBarContainer.style.height = "1vw";
+progressBarContainer.style.width = "60vw";
+progressBarContainer.style.maxWidth = "200px";
+progressBarContainer.style.height = "12px";
 progressBarContainer.style.backgroundColor = "#444";
 progressBarContainer.style.borderRadius = "9999px";
 progressBarContainer.style.marginTop = "24px";
@@ -39,7 +40,7 @@ progressBarFill.style.backgroundColor = "#ffffff";
 progressBarFill.style.borderRadius = "9999px";
 progressBarFill.style.transition = "width 0.1s ease";
 
-// Append fill to container and image + container to overlay
+// Append to DOM
 progressBarContainer.appendChild(progressBarFill);
 loadingOverlay.appendChild(loadingImage);
 loadingOverlay.appendChild(progressBarContainer);
@@ -50,35 +51,39 @@ document.addEventListener("DOMContentLoaded", () => {
   document.body.style.overflow = "hidden";
 });
 
-// Simulate loading progress
-let simulatedProgress = 0;
-const interval = setInterval(() => {
-  if (simulatedProgress < 95) {
-    simulatedProgress += Math.random() * 1.5;
-    progressBarFill.style.width = `${simulatedProgress}%`;
+// Real-time loading simulation based on document.readyState
+let progress = 0;
+
+function updateProgress() {
+  if (document.readyState === "complete") {
+    progress = 100;
+  } else if (document.readyState === "interactive") {
+    progress = Math.min(progress + 1.5, 90);
+  } else {
+    progress = Math.min(progress + 0.5, 75);
   }
-}, 100);
 
-// Track page load
-const loadStart = performance.now();
+  progressBarFill.style.width = `${progress}%`;
 
+  if (progress < 100) {
+    requestAnimationFrame(updateProgress);
+  }
+}
+
+// Start updating as soon as script runs
+requestAnimationFrame(updateProgress);
+
+// Once page is fully loaded
 window.addEventListener("load", () => {
-  const loadEnd = performance.now();
-  const elapsed = loadEnd - loadStart;
-  const minDuration = 500;
-  const delay = Math.max(0, minDuration - elapsed);
+  progress = 100;
+  progressBarFill.style.width = "100%";
 
   setTimeout(() => {
-    clearInterval(interval);
-    progressBarFill.style.width = "100%";
+    loadingOverlay.style.opacity = "0";
 
     setTimeout(() => {
-      loadingOverlay.style.opacity = "0";
-
-      setTimeout(() => {
-        loadingOverlay.remove();
-        document.body.style.overflow = "";
-      }, 400);
-    }, 300); // Small pause to show 100%
-  }, delay);
+      loadingOverlay.remove();
+      document.body.style.overflow = "";
+    }, 400);
+  }, 300);
 });
