@@ -1,478 +1,495 @@
 <!DOCTYPE html>
 <html lang="da">
-  
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta charset="utf-8" />
-    <title>Liwira - Gaver med sjæl</title>
-    <link rel="icon" href="favicon.ico" />
-    <link rel="stylesheet" href="mediaquery.css" />
-    <link rel="stylesheet" href="globals.css" />
-    <link rel="stylesheet" href="styleguide.css" />
-    <link rel="stylesheet" href="style.css" />
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Marck+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Palanquin+Dark:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Marck+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Palanquin+Dark:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Marck+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Palanquin+Dark:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8" />
+  <title>Liwira - Gaver med sjæl</title>
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="mediaquery.css" />
+  <link rel="stylesheet" href="globals.css" />
+  <link rel="stylesheet" href="styleguide.css" />
+  <link rel="stylesheet" href="style.css" />
 
-    <link rel="preload" as="image" href="images/all-products/_MG_3262.jpg" />
-  </head>
-  <body>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Marck+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Palanquin+Dark:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Marck+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Palanquin+Dark:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Marck+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Palanquin+Dark:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
 
-      <!--header -->
-      <header class="header-mobile">
-       
-        <img class="header-logo" src="logo/logo-black.svg"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-         <div class="header-desktop">
-          <a href="index.html">Forside</a>
-          <a href="">Inspirationsunivers</a>
-          <a href="omos.html">Om Os</a>
-          <a href="produktside.html">Produkter</a>
+  <link rel="preload" as="image" href="images/all-products/_MG_3262.jpg" />
+  <script src="js/semi-sticky-header.js"></script>
+</head>
+
+<body>
+
+  <!--header -->
+  <div id="semi-sticky-header">
+    <header class="header-mobile">
+
+      <img class="header-logo" src="logo/logo-black.svg" />
+
+      <div class="header-desktop">
+        <a href="index.html">Forside</a>
+        <a href="">Inspirationsunivers</a>
+        <a href="omos.html">Om Os</a>
+        <a href="produktside.html">Produkter</a>
+      </div>
+
+      <div class="header-desktopicons">
+        <button class="icon-button icon-heart-button">
+          <img src="icons/white/small/heart-s.svg" class="icon-heart" onclick="toggleNav()">
+        </button>
+        <button class="icon-button icon-cart-button">
+          <img src="icons/black/medium/shopping-cart-m.svg" class="icon-cart-svg">
+        </button>
+        <button class="icon-button icon-profile-button">
+          <img src="icons/black/medium/profile-m.svg" class="icon-profile-svg">
+        </button>
+      </div>
+
+      <div class="header-burgermenu">
+        <img onclick="toggleNav()" class="img" src="icons/black/medium/menu_m.svg" />
+      </div>
+
+    </header>
+
+    <!--kategoibar(grønne)-->
+    <div class="kategoribar">
+      <div class="kategoribar-link">
+        <div class="div">
+          <div class="kategoribar-link-p">Delikatesser</div>
+          <img class="img" src="icons/white/medium/chevron-down-m.svg" />
         </div>
-
-        <div class="header-desktopicons">
-            <button class="icon-button icon-heart-button">
-              <img src="icons/white/small/heart-s.svg" class="icon-heart" onclick="toggleNav()">
-            </button>
-            <button class="icon-button icon-cart-button">
-              <img src="icons/black/medium/shopping-cart-m.svg" class="icon-cart-svg">
-            </button>
-            <button class="icon-button icon-profile-button">
-              <img src="icons/black/medium/profile-m.svg" class="icon-profile-svg">
-            </button>
+        <div class="div">
+          <div class="kategoribar-link-p">Interiør</div>
+          <img class="img" src="icons/white/medium/chevron-down-m.svg" />
         </div>
-
-        <div class="header-burgermenu">
-        <img onclick="toggleNav()" class="img" src="icons/black/medium/menu_m.svg"/>
+        <div class="div">
+          <div class="kategoribar-link-p">Livsstil &amp; Velvære</div>
+          <img class="img" src="icons/white/medium/chevron-down-m.svg" />
         </div>
-        
-      </header>
+        <div class="div">
+          <div class="kategoribar-link-p">Gaver Til…</div>
+          <img class="img" src="icons/white/medium/chevron-down-m.svg" />
+        </div>
+        <div class="div">
+          <div class="kategoribar-link-p">Anledninger</div>
+          <img class="img" src="icons/white/medium/chevron-down-m.svg" />
+        </div>
+        <button class="frame-button">
+          <span>Byg Selv</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <!--header slut -->
 
-      <!--kategoibar(grønne)-->
-      <div class="kategoribar">
-        <div class="kategoribar-link">
-          <div class="div">
-            <div class="kategoribar-link-p">Delikatesser</div>
-            <img class="img" src="icons/white/medium/chevron-down-m.svg"/>
+  <!-- hero sektion-->
+
+  <div class="herosection">
+    <div class="div-2">
+      <div class="div-4">
+        <h1 class="h1">Vil du samle den perfekte gave?</h1>
+        <p class="p">Hos Liwira finder du et nøje udvalgt sortiment af kunsthåndværk,
+          interiør og delikatesser, der tilsammen skaber den perfekte gave. Vi tror
+          på, at en gave skal være personlig, bæredygtig og bringe glæde – både
+          til giver og modtager.</p>
+        <div class="herosection-content-2">
+          <p class="text-wrapper-2">Find den gave der passer dig:</p>
+          <div class="div-3">
+            <div class="hero">
+              <div class="hero-text-p">Dit budget</div>
+              <img class="img" src="icons/black/medium/chevron-down-m.svg" />
+            </div>
+            <div class="hero">
+              <div class="hero-text-p">Anledning</div>
+              <img class="img" src="icons/black/medium/chevron-down-m.svg" />
+            </div>
+            <div class="hero-btnbox">
+              <div class="text-wrapper-3">Søg</div>
+            </div>
           </div>
-          <div class="div">
-            <div class="kategoribar-link-p">Interiør</div>
-            <img class="img" src="icons/white/medium/chevron-down-m.svg"/>
-          </div>
-          <div class="div">
-            <div class="kategoribar-link-p">Livsstil &amp; Velvære</div>
-            <img class="img" src="icons/white/medium/chevron-down-m.svg"/>
-          </div>
-          <div class="div">
-            <div class="kategoribar-link-p">Gaver Til…</div>
-            <img class="img" src="icons/white/medium/chevron-down-m.svg"/>
-          </div>
-          <div class="div">
-            <div class="kategoribar-link-p">Anledninger</div>
-            <img class="img" src="icons/white/medium/chevron-down-m.svg"/>
-          </div>
-            <button class="frame-button">
-            <span>Byg Selv</span>
-            </button>
         </div>
       </div>
 
-      <!-- hero sektion-->
+      <div class="flex-herosection-content">
+        <img id="herosection_gavebilled" alt="vin" src="images/all-products/_MG_3262.jpg">
+      </div>
 
-      <div class="herosection">
+    </div>
+  </div>
+
+
+
+  <!--produkt sektion-->
+  <section class="produktintro">
+    <h1 class="h1">Gaver med sjæl – unikke gavekurve og håndplukkede favoritter fra Fyn</h1>
+    <p class="p">Find personlige gaver og gavekurve fyldt med charme, kvalitet og kærlighed.
+      Hos Liwira samler vi det bedste fra kendte mærker og lokalt
+      kunsthåndværk i smukke kombinationer – perfekt som værtindegave,
+      barselsgave, fødselsdagsgave og meget mere. Vi hjælper dig gerne med at
+      finde det helt rigtige – eller sammensætter en gavekurv, der føles lige så god, som den ser ud.</p>
+  </section>
+  <div class="productsection">
+    <div class="div-2">
+      <h2>Vores produkter</h2>
+      <div class="productsection-3">
+        <div class="topnav-btn">
+          <div class="text-wrapper-3">Mest populære</div>
+        </div>
+        <div class="default-wrapper">
+          <div class="text-wrapper-4">Udsalg</div>
+        </div>
+        <div class="default-wrapper">
+          <div class="text-wrapper-4">Få på lager</div>
+        </div>
+      </div>
+    </div>
+    <div class="productsection-4">
+      <div class="mobile-product-box">
+        <div class="product-img">
+          <img class="product-img-2" src="images/all-products/_MG_3402.jpg">
+        </div>
+        <div class="tag-toggle-group">
+          <div class="tag-toggle-group-2">
+            <div class="tag-toggle">
+              <img class="img-2" src="icons/white/medium/check-m.svg" />
+              <div class="title">Label</div>
+            </div>
+            <div class="title-wrapper">
+              <div class="title-2">Label</div>
+            </div>
+          </div>
+        </div>
+        <div class="product-label">
+          <div class="text-wrapper-5">50ml</div>
+          <img class="heart" src="icons/black/small/heart-s.svg" />
+        </div>
+        <div class="product-titel">
+          <h4>Meraki Toilettaske</h4>
+          <p>Toilettasker er meget praktiske, når man skal rejse.
+            Tasken findes i to forskellige farver: grå og grøn.</p>
+        </div>
+        <div class="product-price-2">
+          <div class="div-5">
+            <div class="text-wrapper-2">299,-</div>
+            <img class="frame-2" src="https://c.animaapp.com/Dq1SugZX/img/frame-16-2.svg" />
+          </div>
+          <div class="product-btn">
+            <img class="img-2" src="icons/white/medium/shopping-cart-m.svg" />
+          </div>
+        </div>
+      </div>
+      <div class="mobile-product-box">
+        <div class="product-img">
+          <img class="product-img-2" src="images/all-products/_MG_3432.jpg" />
+        </div>
+        <div class="tag-toggle-group">
+          <div class="tag-toggle-group-2">
+            <div class="tag-toggle">
+              <img class="img-2" src="icons/white/medium/check-m.svg" />
+              <div class="title">Creme</div>
+            </div>
+            <div class="title-wrapper">
+              <div class="title-2">under 200 kr,-</div>
+            </div>
+          </div>
+        </div>
+        <div class="product-label">
+          <div class="text-wrapper-5">50ml</div>
+          <img class="heart" src="icons/black/small/heart-s.svg" />
+        </div>
+        <div class="product-titel">
+          <h4>Meraki Foot Spa Sæt</h4>
+          <p>Forkæl dine fødder med dette lækre sæt fodcreme fra Meraki. Indeholder 2 forskellige produkter.</p>
+        </div>
+        <div class="product-price-2">
+          <div class="div-5">
+            <div class="text-wrapper-2">160,-</div>
+            <img class="frame-2" src="https://c.animaapp.com/Dq1SugZX/img/frame-16-3.svg" />
+          </div>
+          <div class="product-btn">
+            <img class="img-2" src="icons/white/medium/shopping-cart-m.svg" />
+          </div>
+        </div>
+      </div>
+      <div class="mobile-product-box">
+        <div class="product-img">
+          <img class="product-img-2" src="images/all-products/_MG_3428.jpg" />
+        </div>
+        <div class="tag-toggle-group">
+          <div class="tag-toggle-group-2">
+            <div class="tag-toggle">
+              <img class="img-2" src="icons/white/medium/check-m.svg" />
+              <div class="title">Label</div>
+            </div>
+            <div class="title-wrapper">
+              <div class="title-2">Label</div>
+            </div>
+          </div>
+        </div>
+        <div class="product-label">
+          <div class="text-wrapper-5">50ml</div>
+          <img class="heart" src="icons/black/small/heart-s.svg" />
+        </div>
+        <div class="product-titel">
+          <h4>Meraki Body Butter</h4>
+          <p>Meraki Body Butter Silky Mist er en fyldig
+            og cremet body creme, som efterlader din hud blød og smidig</p>
+        </div>
+        <div class="product-price-2">
+          <div class="div-5">
+            <div class="text-wrapper-2">170,-</div>
+            <img class="frame-2" src="https://c.animaapp.com/Dq1SugZX/img/frame-16-2.svg" />
+          </div>
+          <div class="product-btn">
+            <img class="img-2" src="icons/white/medium/shopping-cart-m.svg" />
+          </div>
+        </div>
+      </div>
+      <div class="mobile-product-box">
+        <div class="product-img">
+          <img class="product-img-2" src="images/all-products/_MG_3392.jpg" />
+        </div>
+        <div class="tag-toggle-group">
+          <div class="tag-toggle-group-2">
+            <div class="tag-toggle">
+              <img class="img-2" src="icons/white/medium/check-m.svg" />
+              <div class="title">Label</div>
+            </div>
+            <div class="title-wrapper">
+              <div class="title-2">Label</div>
+            </div>
+          </div>
+        </div>
+        <div class="product-label">
+          <div class="text-wrapper-5">50ml</div>
+          <img class="heart" src="icons/black/small/heart-s.svg" />
+        </div>
+        <div class="product-titel">
+          <h4>Meraki Diffuser</h4>
+          <p>Meraki Diffuser Verbena Drizzle er en super
+            smuk, elegant, moderne og lækker duftfrisker.</p>
+        </div>
+        <div class="product-price-2">
+          <div class="div-5">
+            <div class="text-wrapper-2">139,-</div>
+            <img class="frame-2" src="https://c.animaapp.com/Dq1SugZX/img/frame-16-3.svg" />
+          </div>
+          <div class="product-btn">
+            <img class="img-2" src="icons/white/medium/shopping-cart-m.svg" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--byg selv sektion mobil-->
+
+  <section class="bygselv">
+    <div class="bygselv-text">
+      <h1>Byg Din Egen Gavekurv</h1>
+      <div class="bygselv-text-p-wrapper">
+        <p class="bygselv-text-p">
+          Gør din gave unik med vores byg-selv gavekurv-funktion. Vælg mellem et udvalg af kvalitetsprodukter fra lokale
+          leverandører og sammensæt en kurv, der passer præcis til modtagerens smag og anledningen. Vi sørger for smuk
+          indpakning med cellofan, bånd og silkepapir, så gaven er klar til at bringe glæde.
+        </p>
+      </div>
+    </div>
+
+    <div class="bygselv-step">
+      <!-- Trin 1 -->
+      <div class="bygselv-step-box">
+        <div class="bygselv-step-img">
+          <img src="images/bygselv_step_1--img.webp" alt="Trin 1 - Vælg kurv" />
+        </div>
+        <div class="bygselv-step-text">
+          <h2>Trin 1</h2>
+          <h4>- Vælg kurv -</h4>
+          <p>Find den version, du synes bedst om.</p>
+        </div>
+      </div>
+
+      <!-- Trin 2 -->
+      <div class="bygselv-step-box">
+        <div class="bygselv-step-img">
+          <img src="images/bygselv_step_2--billed.webp" alt="Trin 2 - Vælg produkter" />
+        </div>
+        <div class="bygselv-step-text">
+          <h2>Trin 2</h2>
+          <h4>- Vælg produkter -</h4>
+          <p>Find de lækkerier, der taler til hjertet.</p>
+        </div>
+      </div>
+
+      <!-- Trin 3 -->
+      <div class="bygselv-step-box">
+        <div class="bygselv-step-img">
+          <img src="images/bygselv_step_3--img.webp" alt="Trin 3 - Giv & glæd" />
+        </div>
+        <div class="bygselv-step-text">
+          <h2>Trin 3</h2>
+          <h4>- Giv & glæd -</h4>
+          <p>Send kurven direkte til modtager.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="giftbuide-button">
+      <button class="guiftguide-button">Byg din kurv</button>
+    </div>
+  </section>
+
+
+
+  <!--om os sektion-->
+
+  <div class="aboutsection">
+    <div class="aboutsection_square"></div>
+    <div class="aboutsection-content">
+      <div class="aboutsection-content-2">
+        <img class="aboutsection-content-3" src="logo/logo-black.svg" />
+        <img class="aboutsection-content-4"
+          src="https://c.animaapp.com/mb6ciutdg7JhJ9/img/aboutsection-content--divider.svg" />
+        <h1>Om Os</h1>
+        <div class="aboutsection-text">
+          <h3>Mennesker. Materialer. Med mening.</h3>
+          <p>
+            Hos LIWIRA tilbyder vi gavekurve til alverdens anledninger fx værtindegaver, barselsgaver,
+            fødselsdagsgaver, julegaver, “påskeæg”, jubilæumsgaver, konfirmationsgaver, studentergaver,
+            bryllupsgaver mv. Du finder både kendte mærker af god kvalitet og unikke ting. Hvis du skal bruge en
+            gavekurv er du velkommen til at komme forbi og selv vælge, hvad der skal i den eller at ringe / skrive
+            og bestille den i forvejen.
+          </p>
+        </div>
+      </div>
+      <div class="aboutsection-2">
+        <img class="img" src="icons/brown/medium/map-pin-m.svg" />
+        <div class="aboutsection-3">Jernbanegade 16, 5550</div>
+      </div>
+
+      <button class="aboutsection-button">
+        <span class="text-wrapper-3">Kontakt os</span>
+    </div>
+  </div>
+
+  <!--lokalt samarbejde sektion-->
+  <div class="collabsection">
+    <div class="collabsection-wrapper">
+      <div class="collabsection-2">
+        <div class="div-4">
+          <div class="collabsection-3">
+            <h1>Lokalt samarbejde</h1>
+            <p class="collabsection-5">
+              <span class="text-wrapper-5">Vi gør også meget ud af at samarbejde med lokale leverandører både i forhold
+                til brugskunst og
+                delikatesser.<br />Det betyder at vi er med til at hjælpe mindre virksomheder i gang og se dem
+                vokse. Samtidig kan vi få varer leveret hurtigt og uden store miljøomkostninger. Det er
+                bæredygtighed på flere planer.<br />Desuden støtter vi flere lokale initiativer herunder blandt
+                andet </span>
+              <a href="https://www.langeskovif.dk/" target="_blank" rel="noopener noreferrer"><span
+                  class="text-wrapper-5">Langeskov Idrætsforening</span></a>
+              <span class="text-wrapper-5"> og Langeskov Kræmmermarked.</span>
+            </p>
+            <button>Læs mere</button>
+          </div>
+
+        </div>
         <div class="div-2">
+          <div class="div-3">
+            <div class="collabsection-active-wrapper">
+              <img class="collabsection-active" src="images/collabsection_active.webp" />
+            </div>
+            <div class="collabsection-6">
+              <img class="collabsection-7" src="images/collabsection_next--img.webp" />
+              <div class="collabsection-8">
+                <img class="img" src="icons/white/medium/arrow-left-m.svg" />
+                <img class="collabsection-9" src="icons/white/medium/more-dots-m.svg" />
+                <img class="img" src="icons/white/medium/arrow-right-m.svg" />
+              </div>
+            </div>
+          </div>
           <div class="div-4">
-            <h1  class="h1">Vil du samle den perfekte gave?</h1>
-            <p class="p">Hos Liwira finder du et nøje udvalgt sortiment af kunsthåndværk, 
-              interiør og delikatesser, der tilsammen skaber den perfekte gave. Vi tror 
-              på, at en gave skal være personlig, bæredygtig og bringe glæde – både 
-              til giver og modtager.</p>
-              <div class="herosection-content-2">
-                <p class="text-wrapper-2">Find den gave der passer dig:</p>
-                <div class="div-3">
-                  <div class="hero">
-                    <div class="hero-text-p">Dit budget</div>
-                    <img class="img" src="icons/black/medium/chevron-down-m.svg"/>
-                  </div>
-                  <div class="hero">
-                    <div class="hero-text-p">Anledning</div>
-                    <img class="img" src="icons/black/medium/chevron-down-m.svg"/>
-                  </div>
-                  <div class="hero-btnbox"><div class="text-wrapper-3">Søg</div></div>
-                </div>
-              </div>
-          </div>
-
-          <div class="flex-herosection-content">
-            <img id="herosection_gavebilled" alt="vin" src="images/all-products/_MG_3262.jpg" >
-          </div>
-          
-        </div>
-      </div>
-
-
-      
-      <!--produkt sektion-->
-      <section class="produktintro">
-        <h1 class="h1">Gaver med sjæl – unikke gavekurve og håndplukkede favoritter fra Fyn</h1>
-        <p class="p">Find personlige gaver og gavekurve fyldt med charme, kvalitet og kærlighed.
-        Hos Liwira samler vi det bedste fra kendte mærker og lokalt 
-        kunsthåndværk i smukke kombinationer – perfekt som værtindegave, 
-        barselsgave, fødselsdagsgave og meget mere. Vi hjælper dig gerne med at 
-        finde det helt rigtige – eller sammensætter en gavekurv, der føles lige så god, som den ser ud.</p>
-      </section>
-       <div class="productsection">
-        <div class="div-2">
-          <h2>Vores produkter</h2>
-          <div class="productsection-3">
-            <div class="topnav-btn"><div class="text-wrapper-3">Mest populære</div></div>
-            <div class="default-wrapper"><div class="text-wrapper-4">Udsalg</div></div>
-            <div class="default-wrapper"><div class="text-wrapper-4">Få på lager</div></div>
-          </div>
-        </div>
-        <div class="productsection-4">
-          <div class="mobile-product-box">
-            <div class="product-img">
-              <img class="product-img-2" src="images/all-products/_MG_3402.jpg">
-            </div>
-            <div class="tag-toggle-group">
-              <div class="tag-toggle-group-2">
-                <div class="tag-toggle">
-                  <img class="img-2" src="icons/white/medium/check-m.svg"/>
-                  <div class="title">Label</div>
-                </div>
-                <div class="title-wrapper"><div class="title-2">Label</div></div>
-              </div>
-            </div>
-            <div class="product-label">
-              <div class="text-wrapper-5">50ml</div>
-              <img class="heart" src="icons/black/small/heart-s.svg"/>
-            </div>
-            <div class="product-titel">
-              <h4>Meraki Toilettaske</h4>
-              <p>Toilettasker er meget praktiske, når man skal rejse. 
-                Tasken findes i to forskellige farver: grå og grøn.</p>
-            </div>
-            <div class="product-price-2">
-              <div class="div-5">
-                <div class="text-wrapper-2">299,-</div>
-                <img class="frame-2" src="https://c.animaapp.com/Dq1SugZX/img/frame-16-2.svg" /> 
-              </div>
-              <div class="product-btn">
-                <img class="img-2" src="icons/white/medium/shopping-cart-m.svg"/>
-              </div>
-            </div>
-          </div>
-          <div class="mobile-product-box">
-            <div class="product-img">
-              <img class="product-img-2" src="images/all-products/_MG_3432.jpg" />
-            </div>
-            <div class="tag-toggle-group">
-              <div class="tag-toggle-group-2">
-                <div class="tag-toggle">
-                  <img class="img-2" src="icons/white/medium/check-m.svg"/>
-                  <div class="title">Creme</div>
-                </div>
-                <div class="title-wrapper"><div class="title-2">under 200 kr,-</div></div>
-              </div>
-            </div>
-            <div class="product-label">
-              <div class="text-wrapper-5">50ml</div>
-              <img class="heart" src="icons/black/small/heart-s.svg"/>
-            </div>
-            <div class="product-titel">
-              <h4>Meraki Foot Spa Sæt</h4>
-              <p>Forkæl dine fødder med dette lækre sæt fodcreme fra Meraki. Indeholder 2 forskellige produkter.</p>
-            </div>
-            <div class="product-price-2">
-              <div class="div-5">
-                <div class="text-wrapper-2">160,-</div>
-                <img class="frame-2" src="https://c.animaapp.com/Dq1SugZX/img/frame-16-3.svg" />
-              </div>
-              <div class="product-btn">
-                <img class="img-2" src="icons/white/medium/shopping-cart-m.svg"/>
-              </div>
-            </div>
-          </div>
-          <div class="mobile-product-box">
-            <div class="product-img">
-              <img class="product-img-2" src="images/all-products/_MG_3428.jpg" />
-            </div>
-            <div class="tag-toggle-group">
-              <div class="tag-toggle-group-2">
-                <div class="tag-toggle">
-                     <img class="img-2" src="icons/white/medium/check-m.svg"/>
-                  <div class="title">Label</div>
-                </div>
-                <div class="title-wrapper"><div class="title-2">Label</div></div>
-              </div>
-            </div>
-            <div class="product-label">
-              <div class="text-wrapper-5">50ml</div>
-              <img class="heart" src="icons/black/small/heart-s.svg"/>
-            </div>
-            <div class="product-titel">
-              <h4>Meraki Body Butter</h4>
-              <p>Meraki Body Butter Silky Mist er en fyldig 
-                og cremet body creme, som efterlader din hud blød og smidig</p>
-            </div>
-            <div class="product-price-2">
-              <div class="div-5">
-                <div class="text-wrapper-2">170,-</div>
-                <img class="frame-2" src="https://c.animaapp.com/Dq1SugZX/img/frame-16-2.svg" />
-              </div>
-              <div class="product-btn">
-                <img class="img-2" src="icons/white/medium/shopping-cart-m.svg"/>
-              </div>
-            </div>
-          </div>
-          <div class="mobile-product-box">
-            <div class="product-img">
-              <img class="product-img-2" src="images/all-products/_MG_3392.jpg" />
-            </div>
-            <div class="tag-toggle-group">
-              <div class="tag-toggle-group-2">
-                <div class="tag-toggle">
-                     <img class="img-2" src="icons/white/medium/check-m.svg"/>
-                  <div class="title">Label</div>
-                </div>
-                <div class="title-wrapper"><div class="title-2">Label</div></div>
-              </div>
-            </div>
-            <div class="product-label">
-              <div class="text-wrapper-5">50ml</div>
-              <img class="heart" src="icons/black/small/heart-s.svg"/>
-            </div>
-            <div class="product-titel">
-              <h4>Meraki Diffuser</h4>
-              <p>Meraki Diffuser Verbena Drizzle er en super 
-                smuk, elegant, moderne og lækker duftfrisker.</p>
-            </div>
-            <div class="product-price-2">
-              <div class="div-5">
-                <div class="text-wrapper-2">139,-</div>
-                <img class="frame-2" src="https://c.animaapp.com/Dq1SugZX/img/frame-16-3.svg" />
-              </div>
-              <div class="product-btn">
-                <img class="img-2" src="icons/white/medium/shopping-cart-m.svg"/>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <!--byg selv sektion mobil-->
-
-      <section class="bygselv">
-        <div class="bygselv-text">
-          <h1>Byg Din Egen Gavekurv</h1>
-          <div class="bygselv-text-p-wrapper">
-            <p class="bygselv-text-p">
-              Gør din gave unik med vores byg-selv gavekurv-funktion. Vælg mellem et udvalg af kvalitetsprodukter fra lokale leverandører og sammensæt en kurv, der passer præcis til modtagerens smag og anledningen. Vi sørger for smuk indpakning med cellofan, bånd og silkepapir, så gaven er klar til at bringe glæde.
+            <h3>Lena Fischer Keramik</h3>
+            <p>
+              Lena Fischer bor på Hindsholm med sin familie, hvor hun hånddrejer unikt keramik med lavaler og
+              krystalglasur – en passion, der begyndte med et kursus i 2019 og nu er blevet til en lille forretning
+              hjemme på gården.
             </p>
           </div>
         </div>
-
-        <div class="bygselv-step">
-          <!-- Trin 1 -->
-          <div class="bygselv-step-box">
-            <div class="bygselv-step-img">
-              <img src="images/bygselv_step_1--img.webp" alt="Trin 1 - Vælg kurv" />
-            </div>
-            <div class="bygselv-step-text">
-              <h2>Trin 1</h2>
-              <h4>- Vælg kurv -</h4>
-              <p>Find den version, du synes bedst om.</p>
-            </div>
-          </div>
-
-          <!-- Trin 2 -->
-          <div class="bygselv-step-box">
-            <div class="bygselv-step-img">
-              <img src="images/bygselv_step_2--billed.webp" alt="Trin 2 - Vælg produkter" />
-            </div>
-            <div class="bygselv-step-text">
-              <h2>Trin 2</h2>
-              <h4>- Vælg produkter -</h4>
-              <p>Find de lækkerier, der taler til hjertet.</p>
-            </div>
-          </div>
-
-          <!-- Trin 3 -->
-          <div class="bygselv-step-box">
-            <div class="bygselv-step-img">
-              <img src="images/bygselv_step_3--img.webp" alt="Trin 3 - Giv & glæd" />
-            </div>
-            <div class="bygselv-step-text">
-              <h2>Trin 3</h2>
-              <h4>- Giv & glæd -</h4>
-              <p>Send kurven direkte til modtager.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="giftbuide-button">
-          <button class="guiftguide-button">Byg din kurv</button>
-        </div>
-      </section>
-
-
-
-      <!--om os sektion-->
-
-      <div class="aboutsection">
-        <div class="aboutsection_square"></div>
-        <div class="aboutsection-content">
-          <div class="aboutsection-content-2">
-            <img
-              class="aboutsection-content-3"
-              src="logo/logo-black.svg"
-            />
-            <img
-              class="aboutsection-content-4"
-              src="https://c.animaapp.com/mb6ciutdg7JhJ9/img/aboutsection-content--divider.svg"
-            />
-            <h1>Om Os</h1>
-            <div class="aboutsection-text">
-              <h3>Mennesker. Materialer. Med mening.</h3>
-              <p>
-                Hos LIWIRA tilbyder vi gavekurve til alverdens anledninger fx værtindegaver, barselsgaver,
-                fødselsdagsgaver, julegaver, “påskeæg”, jubilæumsgaver, konfirmationsgaver, studentergaver,
-                bryllupsgaver mv. Du finder både kendte mærker af god kvalitet og unikke ting. Hvis du skal bruge en
-                gavekurv er du velkommen til at komme forbi og selv vælge, hvad der skal i den eller at ringe / skrive
-                og bestille den i forvejen.
-              </p>
-            </div>
-          </div>
-          <div class="aboutsection-2">
-            <img class="img" src="icons/brown/medium/map-pin-m.svg"/>
-            <div class="aboutsection-3">Jernbanegade 16, 5550</div>
-          </div>
-
-          <button class="aboutsection-button">
-            <span class="text-wrapper-3">Kontakt os</span>
-        </div>
       </div>
+    </div>
+  </div>
 
-      <!--lokalt samarbejde sektion-->
-      <div class="collabsection">
-        <div class="collabsection-wrapper">
-          <div class="collabsection-2">
-            <div class="div-4">
-              <div class="collabsection-3">
-                <h1>Lokalt samarbejde</h1>
-                <p class="collabsection-5">
-                  <span class="text-wrapper-5"
-                    >Vi gør også meget ud af at samarbejde med lokale leverandører både i forhold til brugskunst og
-                    delikatesser.<br />Det betyder at vi er med til at hjælpe mindre virksomheder i gang og se dem
-                    vokse. Samtidig kan vi få varer leveret hurtigt og uden store miljøomkostninger. Det er
-                    bæredygtighed på flere planer.<br />Desuden støtter vi flere lokale initiativer herunder blandt
-                    andet </span
-                  >
-                  <a href="https://www.langeskovif.dk/" target="_blank" rel="noopener noreferrer"
-                    ><span class="text-wrapper-5">Langeskov Idrætsforening</span></a
-                  >
-                  <span class="text-wrapper-5"> og Langeskov Kræmmermarked.</span>
-                </p>
-                              <button>Læs mere</button>
-              </div>
+  <!--footer sektion-->
+  <footer class="footer">
+    <div class="footer-hero">
+      <img class="footer-logo" src="logo/logo-black.svg" alt="Liwira logo" />
+      <p class="footer-title">Liwira - Gavebutik i hjertet af Langeskov</p>
+    </div>
 
-            </div>
-            <div class="div-2">
-              <div class="div-3">
-                <div class="collabsection-active-wrapper">
-                  <img
-                    class="collabsection-active"
-                    src="images/collabsection_active.webp"
-                  />
-                </div>
-                <div class="collabsection-6">
-                  <img
-                    class="collabsection-7"
-                    src="images/collabsection_next--img.webp"
-                  />
-                  <div class="collabsection-8">
-                    <img class="img" src="icons/white/medium/arrow-left-m.svg"/>
-                    <img
-                      class="collabsection-9"
-                      src="icons/white/medium/more-dots-m.svg"
-                    />
-                    <img class="img" src="icons/white/medium/arrow-right-m.svg"/>
-                  </div>
-                </div>
-              </div>
-              <div class="div-4">
-                <h3>Lena Fischer Keramik</h3>
-                <p>
-                  Lena Fischer bor på Hindsholm med sin familie, hvor hun hånddrejer unikt keramik med lavaler og
-                  krystalglasur – en passion, der begyndte med et kursus i 2019 og nu er blevet til en lille forretning
-                  hjemme på gården.
-                </p>
-              </div>
-            </div>
+    <div class="footer-content">
+      <div class="footer-links">
+        <div class="footer-link">
+          <button class="footer-link-toggle">Åbningstider <img class="footer-icon"
+              src="icons/black/medium/chevron-down-m.svg" alt="Dropdown icon" /></button>
+          <div class="footer-dropdown">
+            <p>Mandag - Fredag: 11:00 - 17:00<br>Lørdag: 10:00 - 12:00<br>Søndag & helligdage: LUKKET</p>
+          </div>
+        </div>
+        <div class="footer-link">
+          <button class="footer-link-toggle">Læs mere <img class="footer-icon"
+              src="icons/black/medium/chevron-down-m.svg" alt="Dropdown icon" /></button>
+          <div class="footer-dropdown">
+            <p>Hjem <br>Om os<br>Værdier</p>
+          </div>
+        </div>
+        <div class="footer-link">
+          <button class="footer-link-toggle">Retningslinjer <img class="footer-icon"
+              src="icons/black/medium/chevron-down-m.svg" alt="Dropdown icon" /></button>
+          <div class="footer-dropdown">
+            <p>Information<br>Privatlivspolitik<br>Handelsbetingelser</p>
           </div>
         </div>
       </div>
 
-      <!--footer sektion-->
-        <footer class="footer">
-          <div class="footer-hero">
-            <img class="footer-logo" src="logo/logo-black.svg" alt="Liwira logo" />
-            <p class="footer-title">Liwira - Gavebutik i hjertet af Langeskov</p>
-          </div>
+      <div class="footer-contact">
+        <span class="footer-contact-title">Kontakt</span>
+        <p class="footer-contact-info">
+          Jernbanegade 16,<br />
+          5550 Langeskov<br />
+          kontakt@dinpejs.dk<br />
+          +45 2426 7971<br />
+          CVR: 34116083
+        </p>
+      </div>
+    </div>
 
-          <div class="footer-content">
-            <div class="footer-links">
-              <div class="footer-link">
-                <button class="footer-link-toggle">Åbningstider <img class="footer-icon" src="icons/black/medium/chevron-down-m.svg" alt="Dropdown icon" /></button>
-                <div class="footer-dropdown">
-                  <p>Mandag - Fredag: 11:00 - 17:00<br>Lørdag: 10:00 - 12:00<br>Søndag & helligdage: LUKKET</p>
-                </div>
-              </div>
-              <div class="footer-link">
-                <button class="footer-link-toggle">Læs mere <img class="footer-icon" src="icons/black/medium/chevron-down-m.svg" alt="Dropdown icon" /></button>
-                <div class="footer-dropdown">
-                  <p>Hjem <br>Om os<br>Værdier</p>
-                </div>
-              </div>
-              <div class="footer-link">
-                <button class="footer-link-toggle">Retningslinjer <img class="footer-icon" src="icons/black/medium/chevron-down-m.svg" alt="Dropdown icon" /></button>
-                <div class="footer-dropdown">
-                  <p>Information<br>Privatlivspolitik<br>Handelsbetingelser</p>
-                </div>
-              </div>
-            </div>
+    <div class="footer-buttons">
+      <div class="footer-button dark"><span>Kontakt</span></div>
+      <div class="footer-button light"><span>Find vej</span></div>
+    </div>
+  </footer>
 
-            <div class="footer-contact">
-              <span class="footer-contact-title">Kontakt</span>
-              <p class="footer-contact-info">
-                Jernbanegade 16,<br />
-                5550 Langeskov<br />
-                kontakt@dinpejs.dk<br />
-                +45 2426 7971<br />
-                CVR: 34116083
-              </p>
-            </div>
-          </div> 
+  <script src="loaddesktopstyles.js" defer></script>
+  <script src="script.js" defer></script>
+  <script src="burgermenu.js" defer></script>
+</body>
 
-          <div class="footer-buttons">
-            <div class="footer-button dark"><span>Kontakt</span></div>
-            <div class="footer-button light"><span>Find vej</span></div>
-          </div>
-        </footer>
-
-    <script src="loaddesktopstyles.js" defer></script>
-    <script src="script.js" defer></script>
-    <script src="burgermenu.js" defer></script>
-  </body>
 </html>

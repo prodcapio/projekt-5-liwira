@@ -31,68 +31,72 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <link rel="preload" as="image" href="images/all-products/_MG_3262.jpg" />
+    <script src="js/semi-sticky-header.js"></script>
 </head>
 
 <body>
 
     <!--header -->
-    <header class="header-mobile">
+    <div id="semi-sticky-header">
+        <header class="header-mobile">
 
-        <img class="header-logo" src="logo/logo-black.svg" />
+            <img class="header-logo" src="logo/logo-black.svg" />
 
-        <div class="header-desktop">
-            <a href="index.html">Forside</a>
-            <a href="">Inspirationsunivers</a>
-            <a href="omos.html">Om Os</a>
-            <a href="produktside.html">Produkter</a>
-        </div>
-
-        <div class="header-desktopicons">
-            <button class="icon-button icon-heart-button">
-                <img src="icons/white/small/heart-s.svg" class="icon-heart" onclick="toggleNav()">
-            </button>
-            <button class="icon-button icon-cart-button">
-                <img src="icons/black/medium/shopping-cart-m.svg" class="icon-cart-svg">
-            </button>
-            <button class="icon-button icon-profile-button">
-                <img src="icons/black/medium/profile-m.svg" class="icon-profile-svg">
-            </button>
-        </div>
-
-        <div class="header-burgermenu">
-            <img onclick="toggleNav()" class="img" src="icons/black/medium/menu_m.svg" />
-        </div>
-
-    </header>
-
-    <!--kategoibar(grønne)-->
-    <div class="kategoribar">
-        <div class="kategoribar-link">
-            <div class="div">
-                <div class="kategoribar-link-p">Delikatesser</div>
-                <img class="img" src="icons/white/medium/chevron-down-m.svg" />
+            <div class="header-desktop">
+                <a href="index.html">Forside</a>
+                <a href="">Inspirationsunivers</a>
+                <a href="omos.html">Om Os</a>
+                <a href="produktside.html">Produkter</a>
             </div>
-            <div class="div">
-                <div class="kategoribar-link-p">Interiør</div>
-                <img class="img" src="icons/white/medium/chevron-down-m.svg" />
+
+            <div class="header-desktopicons">
+                <button class="icon-button icon-heart-button">
+                    <img src="icons/white/small/heart-s.svg" class="icon-heart" onclick="toggleNav()">
+                </button>
+                <button class="icon-button icon-cart-button">
+                    <img src="icons/black/medium/shopping-cart-m.svg" class="icon-cart-svg">
+                </button>
+                <button class="icon-button icon-profile-button">
+                    <img src="icons/black/medium/profile-m.svg" class="icon-profile-svg">
+                </button>
             </div>
-            <div class="div">
-                <div class="kategoribar-link-p">Livsstil &amp; Velvære</div>
-                <img class="img" src="icons/white/medium/chevron-down-m.svg" />
+
+            <div class="header-burgermenu">
+                <img onclick="toggleNav()" class="img" src="icons/black/medium/menu_m.svg" />
             </div>
-            <div class="div">
-                <div class="kategoribar-link-p">Gaver Til…</div>
-                <img class="img" src="icons/white/medium/chevron-down-m.svg" />
+
+        </header>
+
+        <!--kategoibar(grønne)-->
+        <div class="kategoribar">
+            <div class="kategoribar-link">
+                <div class="div">
+                    <div class="kategoribar-link-p">Delikatesser</div>
+                    <img class="img" src="icons/white/medium/chevron-down-m.svg" />
+                </div>
+                <div class="div">
+                    <div class="kategoribar-link-p">Interiør</div>
+                    <img class="img" src="icons/white/medium/chevron-down-m.svg" />
+                </div>
+                <div class="div">
+                    <div class="kategoribar-link-p">Livsstil &amp; Velvære</div>
+                    <img class="img" src="icons/white/medium/chevron-down-m.svg" />
+                </div>
+                <div class="div">
+                    <div class="kategoribar-link-p">Gaver Til…</div>
+                    <img class="img" src="icons/white/medium/chevron-down-m.svg" />
+                </div>
+                <div class="div">
+                    <div class="kategoribar-link-p">Anledninger</div>
+                    <img class="img" src="icons/white/medium/chevron-down-m.svg" />
+                </div>
+                <button class="frame-button">
+                    <span>Byg Selv</span>
+                </button>
             </div>
-            <div class="div">
-                <div class="kategoribar-link-p">Anledninger</div>
-                <img class="img" src="icons/white/medium/chevron-down-m.svg" />
-            </div>
-            <button class="frame-button">
-                <span>Byg Selv</span>
-            </button>
         </div>
     </div>
+    <!--header slut -->
 
 
     <div class="product-container-all">
@@ -129,14 +133,14 @@
                     </div>
 
                     <div class="product-container-right-sort-after">
-                        <div>
+                        <div class="product-container-right-sort-after_left">
                             <h4>Sorter efter</h4>
                         </div>
-                        <div>
-                            <a href="">Nyeste</a>
+                        <div class="product-container-right-sort-after_middle">
+                            <a href="" class="product-container-right-sort-after_middle-active">Nyeste</a>
                             <a href="">Populære</a>
                         </div>
-                        <div>
+                        <div class="product-container-right-sort-after_right">
                             <img src="icons/black/medium/heart-m.svg" alt="">
                             <img src="icons/black/medium/heart-m.svg" alt="">
                             <img src="icons/black/medium/heart-m.svg" alt="">
@@ -494,10 +498,26 @@
 
     <div class="product-bottom-container">
         <div class="product-bottom-container-left">
-            1
+            <p>(Valgte kurv størrelse)</p>
+            <h3>xx,-</h3>
+            <a href="">Ændre kurv</a>
         </div>
         <div class="product-bottom-container-right">
-            1
+            <div class="product-bottom-container-right_top">
+                <h4>Vælg op til 10 produkter</h4>
+            </div>
+            <div class="product-bottom-container-right_bottom">
+                <img src="icons/black/medium/plus-circle-m.svg">
+                <img src="icons/black/medium/plus-circle-m.svg">
+                <img src="icons/black/medium/plus-circle-m.svg">
+                <img src="icons/black/medium/plus-circle-m.svg">
+                <img src="icons/black/medium/plus-circle-m.svg">
+                <img src="icons/black/medium/plus-circle-m.svg">
+                <img src="icons/black/medium/plus-circle-m.svg">
+                <img src="icons/black/medium/plus-circle-m.svg">
+                <img src="icons/black/medium/plus-circle-m.svg">
+                <img src="icons/black/medium/plus-circle-m.svg">
+            </div>
         </div>
     </div>
 
