@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.appendChild(nav);
 
     setTimeout(() => nav.classList.add("show"), 10);
-    burgerIcon.src = "https://upload.wikimedia.org/wikipedia/commons/e/e4/Close-icon.svg";
+    burgerIcon.src = "icons/white/medium/close_m.svg";
 
     // Luk via "Luk"-link
     document.getElementById("close-nav-link").addEventListener("click", (e) => {
