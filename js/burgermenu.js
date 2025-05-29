@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (existingNav) {
       existingNav.classList.remove("show");
+      document.body.style.overflow = "auto"; // ✅ Scroll tilbage
       setTimeout(() => existingNav.remove(), 300);
       burgerIcon.src = "https://upload.wikimedia.org/wikipedia/commons/b/b2/Hamburger_icon.svg";
       return;
@@ -53,7 +54,6 @@ document.addEventListener("DOMContentLoaded", () => {
       document.head.appendChild(style);
     }
 
-    // Create nav menu
     const nav = document.createElement("div");
     nav.className = "fullscreen-nav";
     nav.innerHTML = `
@@ -61,14 +61,13 @@ document.addEventListener("DOMContentLoaded", () => {
       <a href="gavekurv.html">Gavekurv</a>
       <a href="omos.html">Om Os</a>
       <a href="bygselv.html">Byg Selv</a>
-      <a href="#" id="close-nav-link">Luk</a>
     `;
     document.body.appendChild(nav);
+    document.body.style.overflow = "hidden"; // ✅ Disable scroll
 
     setTimeout(() => nav.classList.add("show"), 10);
     burgerIcon.src = "icons/white/medium/close_m.svg";
 
-    // Luk via "Luk"-link
     document.getElementById("close-nav-link").addEventListener("click", (e) => {
       e.preventDefault();
       burgerIcon.click();
