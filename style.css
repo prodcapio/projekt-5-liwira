@@ -237,6 +237,10 @@
   font-family: var(--body-font-family);
 }
 
+.header-mobile a::after {
+  text-decoration: underline !important;
+}
+
 #paddingfixedforsection {
   margin-top: 170px;
 }
