@@ -164,6 +164,7 @@
 
 
 .product-bottom-container {
+  transition: .5s all ease-in-out;
   height: 200px;
   width: 100%;
   background-color: var(--hvid-neutral);
@@ -1696,6 +1697,10 @@
   padding: 40px 16px;
   background-color: var(--neutral-beige);
   width: 100%;
+  z-index: 9999;
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size);
+  line-height: var(--body-line-height);
 }
 
 .footer-hero {
