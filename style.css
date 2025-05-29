@@ -577,7 +577,7 @@
 }
 
 .productsection h2 {
-  color: var(--brun-sekundr);
+  color: var(--sort-primr);
 }
 
 .product-intro {
@@ -857,7 +857,8 @@
   justify-content: center;
   gap: 8px;
   padding: 8px;
-  background-color: #f5f5f5;
+  background-color: var(--sort-primr);
+  color: var(--hvid-neutral) !important;
   border-radius: 8px;
   box-shadow: 0px 0px 1px #19171614, 0px 2px 2px #1917160f;
   position: relative;
@@ -870,7 +871,6 @@
   margin-top: -1.00px;
   font-family: var(--single-line-body-base-font-family);
   font-weight: var(--single-line-body-base-font-weight);
-  color: #757575;
   font-size: var(--single-line-body-base-font-size);
   letter-spacing: var(--single-line-body-base-letter-spacing);
   line-height: var(--single-line-body-base-line-height);
@@ -1088,7 +1088,7 @@
   display: flex;
   gap: 24px;
   flex-direction: column;
-  color: var(--brun-sekundr);
+  color: var(--sort-primr)
 }
 
 .bygselv-text .p {
@@ -1250,7 +1250,7 @@
 
 .aboutsection {
   background-image: url(images/aboutsection.webp);
-  color: var(--brun-sekundr);
+  color: var(--sort-primr);
   text-align: center;
   display: flex;
   min-height: 957px;
@@ -1364,7 +1364,7 @@
   margin-top: -1.00px;
   font-family: var(--body-font-family);
   font-weight: var(--body-font-weight);
-  color: var(--brun-sekundr);
+  color: var(--sort-primr);
   font-size: var(--body-font-size);
   letter-spacing: var(--body-letter-spacing);
   line-height: var(--body-letter-spacing);
