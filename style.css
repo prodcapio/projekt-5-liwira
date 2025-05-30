@@ -1833,6 +1833,35 @@
   gap: 24px;
 }
 
+.scroll-to-top {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 50%;
+  background-color: #527446;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+  z-index: 1000;
+}
+
+.scroll-to-top.show {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.scroll-to-top:hover {
+  background-color: #405c35;
+}
+
 /*————————————————————————————————————————————————————————————————————————*/
 /* 10) Media Queries                                                      */
 /*————————————————————————————————————————————————————————————————————————*/
