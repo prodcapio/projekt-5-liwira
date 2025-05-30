@@ -781,7 +781,7 @@
   align-items: start;
   height: fit-content;
   width: 100%;
-  pad: 48px 16px;
+  padding: 48px 16px;
 }
 
 .productsection-2 {
@@ -1828,7 +1828,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  padding: 24px 40x;
+  padding: 24px 40px;
   max-width: 100%;
   gap: 24px;
 }
@@ -1937,7 +1937,7 @@
   }
 
   .productsection-5 {
-    padding: 48x 40px;
+    padding: 48px 40px;
   }
 
   .product-container-all-2 {
@@ -2016,7 +2016,7 @@
   }
 
   .productsection-5 {
-    padding: 48x 120px;
+    padding: 48px 120px;
   }
 
   .produktintro {
@@ -2135,7 +2135,7 @@
   .bygselvsection .div-3 {
     display: flex;
     flex-direction: row;
-    align-items: space-between;
+    align-items: center;
     justify-content: space-between;
     gap: 24px;
   }
