@@ -4,7 +4,6 @@ const threshold = 15;
 window.addEventListener('scroll', function () {
     const header = document.getElementById('semi-sticky-header')
     const burgericon = document.getElementById('burger-icon')
-    const productbottomcontainer = document.getElementById('product-bottom-container')
     let currentScroll = this.window.pageYOffset
     let scrollForskel = currentScroll - Scroll;
 
